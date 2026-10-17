@@ -1,0 +1,31 @@
+---
+title: Buttons, chips, and pills
+description: Button, Chip, and Pill inside a Bar, with focus moving between three bars.
+tableOfContents: false
+sidebar:
+  order: 2
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../../components/Monitor.astro';
+import src from '../../../../../steps/widgets-controls.ts?raw';
+
+<div class="lesson">
+<Monitor step="widgets-controls" running="Buttons, chips, and pills" />
+<div class="notes">
+
+## What is on screen
+
+Click the picture. Left and Right move along a row. Up and Down move between rows. Press OK on a chip to choose it.
+
+- **`Button`** comes in three weights. `primary` is a white plate with dark text, for the one thing to do on a screen. `secondary` is a see-through plate with a thin line. `quiet` is just the line, for a footer. An `icon` adds a play triangle or a plus sign.
+- **`Chip`** is a filter. The chosen chip is white with dark text. The others are a thin line. Choosing and focusing are two different things, so a ring can sit on a chip that is not chosen.
+- **`Pill`** is a rounded choice, like a language in a menu.
+- **`Bar`** holds a row of these. It does not scroll or clip, so the focus ring on the first item is never cut off. `bar.item(id, label, node)` adds one. `bar.strip()` hands back what the focus engine needs.
+
+The three bars are in a **pack**, so Down goes from the buttons to the chips and lands on the one under where you were.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="widgets-controls.ts" />

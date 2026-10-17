@@ -1,0 +1,39 @@
+---
+title: Another design
+description: theme() restyles the whole kit before a screen is built, at no cost per frame.
+tableOfContents: false
+sidebar:
+  order: 7
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../../components/Monitor.astro';
+import src from '../../../../../steps/widgets-theme.ts?raw';
+
+<div class="lesson">
+<Monitor step="widgets-theme" running="Another design" />
+<div class="notes">
+
+## What is on screen
+
+The same buttons, chips, cards, and rails as the other pages, in a different design: a warm ground, an amber accent, square corners, a thicker focus ring, and cream text.
+
+`theme()` from `tenfoot/ui` does it. Call it once, before you build any widget, with only the values you want to change. Anything you leave out keeps the ARENA+ value.
+
+- **`brand`** is the four colors the palette is built from: `ground`, `accent`, `live`, and `plate`. Change the accent and every fill, line, and glow that is a shade of it changes with it.
+- **`color`** sets one token on its own, after that build. Here it makes headings cream instead of white.
+- **`radius`**, **`space`**, **`focus`**, and **`tracking`** are plain numbers.
+- **`family`** changes the fonts. A design that does this bakes its own font pictures with `tenfoot-msdf` and passes them to `msdfText`, because the ones the kit ships are the ARENA+ faces.
+- **`type`** replaces a whole text setting, like `type.heading`.
+- **`screen`** is the layout space, for a design drawn at 1280×720 instead of 1920×1080. Create the renderer at the same size. These story pages use it to draw at 960×540, which is why the widgets are readable in a small monitor.
+
+## Why it costs nothing
+
+The kit's tokens are plain objects: `color`, `type`, `radius`, and so on. Every widget reads `color.text.on` straight from that object when it draws. `theme()` changes the values inside those same objects. It does not wrap them, and no widget looks anything up through a function. So a frame in a themed app costs exactly what it costs in ARENA+.
+
+That is also why it runs before anything is built. A widget copies the text setting it measures itself by when it is made. Change the theme after that, and the widget keeps its old size. `theme()` with no arguments puts the ARENA+ values back.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="widgets-theme.ts" />

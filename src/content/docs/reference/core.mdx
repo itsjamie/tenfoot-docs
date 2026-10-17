@@ -1,0 +1,71 @@
+---
+title: core
+description: The GPU code, the painter, the scene, text, and images. tenfoot/core.
+sidebar:
+  order: 1
+---
+
+This is the base that everything else builds on. One GPU program draws shapes, pictures, and text. The painter groups shapes together until the picture data or the clip changes. The scene only draws when something asks for a frame, or when something is moving.
+
+## createRenderer
+
+```ts
+import { createRenderer } from 'tenfoot';
+const r = createRenderer(canvas, {
+  text,        // required: canvasText, or msdfText({ fallback, faces })
+  focus,       // nav.host from tenfoot/ui, or managerHost(...) from tenfoot/focus
+  video,       // your <video> element; turns on r.controller and r.subtitles
+  keys,        // the remote keys your app uses, beyond arrows, Enter, and Back
+  resolve,     // (key, caps) => Variant[]; turns a picture key into files to try
+  effects,     // ['grade', 'shimmer']: the looks added to the GPU program
+  msdf,        // msdfAuto | msdfScale | msdfFwidth, if you use the MSDF text tool
+  width, height, scale, budget,
+  speak,       // read focus changes out loud through the TV; default true
+  overlay,     // 'info-key' (default) | 'on' | 'off'
+  inspector,   // copy the scene tree into the page for Inspect Element
+});
+```
+
+Returns `null` if there is no WebGL. Otherwise it returns: `gl`, `painter`, `text`, `images`, `scene`, `root`, `focus`, `platform`, `controller`, `subtitles`, `overlay`, `inspector`, `input(handler)`, and `diagnostics()`.
+
+## Node
+
+| Member | What it is |
+| --- | --- |
+| `x y w h` | the box, in 1920×1080 pixels, measured from the parent |
+| `scale opacity` | applied to this node and its children; `scale` grows from the center |
+| `visible clip` | hide the node and its children; cut children off at the node's box |
+| `name` | the name the inspector and overlay show (minifiers remove class names) |
+| `add(n) remove(n)` | add or remove a child; `parent` stays up to date |
+| `paint(p)` | write this to draw, using the node's own coordinates |
+
+## Scene
+
+| Call | What it does |
+| --- | --- |
+| `invalidate()` | draw a frame |
+| `animate(node, { x, y, w, h, scale, opacity }, ms, ease?)` | move a value over time; draws frames while it runs; `easeOut` and `linear` are included |
+| `addDirtySource(fn)` | checked once per tick; return true when something on screen changed |
+| `onPaint(fn)` | runs after each drawn frame |
+| `capture(target)` | draw the scene into a render target once |
+| `start() stop()` | the frame loop; the renderer stops it while the app is hidden |
+| `frames lastPaintMs maxPaintMs` | the numbers the overlay shows |
+
+## Painter
+
+| Call | Draws |
+| --- | --- |
+| `rect(x, y, w, h, color, radius?)` | a filled rectangle with rounded corners |
+| `border(x, y, w, h, width, color, radius?)` | an outline inside the rectangle |
+| `image(handle, x, y, w, h, radius?, tint?)` | a picture, or nothing until it loads |
+| `text(run, x, y, color, grow?)` | a saved line of text; `grow` thickens MSDF letters for an outline |
+| `foot(...)` | a bar along the bottom of a rectangle, like progress under a card |
+| `target(t, x, y, w, h)` | a captured frame |
+| `pushClip popClip` | cut everything to a rectangle |
+| `pushOpacity pushTransform` | and their pops |
+| `pushEffect(FX_GRADE) popEffect` | turn a named effect on and off |
+| `pushShader(h) popShader` | draw through your own GPU program |
+
+## GL
+
+`caps` (what the device can do: WebGL 2, instancing, compressed formats, measured math precision), `budget` and `bytes` (GPU memory for pictures), `drawCalls`, `setEffect(name, v4)`, `shader(spec)` and `setShader(handle, v4)`, `createTarget(fraction)`, `blur(target, passes)`, `releaseTarget(target)`, `trim(bytes)`.

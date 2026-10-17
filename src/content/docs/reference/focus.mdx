@@ -1,0 +1,35 @@
+---
+title: focus
+description: Remote-control focus with groups, scopes, memory, and scrolling. tenfoot/focus.
+sidebar:
+  order: 4
+---
+
+Most apps use `createNav` from [ui](../ui/) and never touch this engine directly. The engine is here for an app that wants its own way of describing screens. `docs/DESIGN.md` in the package explains how it decides where focus goes.
+
+```ts
+import { Manager, managerHost, linearTopology, gridTopology, focusId, groupId } from 'tenfoot/focus';
+const focus = new Manager();
+const r = createRenderer(canvas, { text, focus: managerHost(focus, null) });
+focus.registry.commit(() => {
+  focus.registry.registerGroup({ id: rail, parent: null, topology: linearTopology({ axis: 'x', count, childAt }) });
+  focus.registry.register({ id: focusId('card-0'), groupId: rail, geometry: { navigationBounds: rect }, state: 'enabled' });
+});
+focus.move('right');
+```
+
+## How it thinks
+
+Every item belongs to one **group**. A group's **topology** is its shape. It says what a direction means inside the group: the next item along a row, or the item above in a grid or TV guide. When you press a key, the engine walks up through the groups until one can answer. At the edge of a group, the group's **boundary rule** decides what happens next. When focus enters a new group, it lands by direction, by memory, or on the first item. A **scope** keeps focus inside a set of groups. It remembers what was focused when it closes.
+
+## Manager
+
+`focus(id)`, `move(direction)`, `clear()`, `activateScope(scope)`, `dismissScope()`, `restore()`, `remember(key, node)`, `subscribe(listener)`, `inspect()`, `diagnostics(sink)`.
+
+## Topologies
+
+`linearTopology({ axis, count, childAt, indexOf?, indexNear? })`, `gridTopology({ lineAxis, projection, rowFlow? })`, `epgTopology`. A topology can say which items are loaded right now, for long lists. It calls `settle()` when a missing item arrives.
+
+## Scrolling
+
+`Coordinator` owns every surface that scrolls. A group declares a `ScrollPort` with its window, its content size, an anchor rule, and an `apply` function that moves the node. You register items where the layout put them, with no scroll offset added. The coordinator works out how to scroll every surface between the item and the screen.

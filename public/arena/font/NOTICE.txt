@@ -1,0 +1,14 @@
+These distance field atlases are derived from Noto Sans and Noto Sans Mono,
+Copyright 2022 The Noto Project Authors, licensed under the SIL Open Font
+License version 1.1. The full licence text is in OFL.txt beside this file.
+
+No Reserved Font Name is asserted, so these derived files carry their own
+names. They are outlines converted to a multi-channel signed distance field
+by tools/build-msdf.mjs; no glyph shape was altered.
+
+arena-sans-400: NotoSans-Regular.ttf, 337 glyphs, atlas sha256 01938991510d8f9bb977c61fca37eba6c1d095f8b2de8ef4a35332d2bfe77529
+arena-sans-500: NotoSans-Medium.ttf, 337 glyphs, atlas sha256 a544e0ce3b1962349b7647b0920564bf170a357f69df1b750df1eb841c697bf5
+arena-sans-700: NotoSans-Bold.ttf, 337 glyphs, atlas sha256 3bc538bd8f16a22a4e0e9a68663b2a713f25343b11eade230b3214ef43562484
+arena-sans-900: NotoSans-Black.ttf, 337 glyphs, atlas sha256 71afa553be25255bf6bf230a006c574c785912f2da5248eabaaedfc3d18b54e4
+arena-mono-500: NotoSansMono-Medium.ttf, 336 glyphs, atlas sha256 845d028fdeabe173487a32e4d8f845d486c05ab397e31bb3c311a14952578e11
+arena-mono-700: NotoSansMono-Bold.ttf, 336 glyphs, atlas sha256 f3cc3c4d739d4448ffe394cf5d051e4c0a445f5121b3e88aa1762d5d5fcdf01b

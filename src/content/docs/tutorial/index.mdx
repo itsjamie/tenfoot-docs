@@ -1,0 +1,41 @@
+---
+title: Build an app
+description: Build a small TV app in eight steps. Each step runs live on the page.
+sidebar:
+  order: 0
+  label: Overview
+---
+
+In this tutorial you build a small TV app, one step at a time. You start with one shape on the screen. By the end, you have two screens, rows of cards, a working remote, pictures, and a video with captions.
+
+Every step is a real file in the project. The code you read on a page is that same file. The picture next to it runs that same file. So the code and the demo can never disagree.
+
+## How the demos work
+
+Each step page has a TV on it, with the notes beside it and the code underneath. Click the picture. Then the arrow keys, <kbd>Enter</kbd>, and <kbd>Backspace</kbd> act like the remote. The buttons next to the TV do the same thing with a mouse.
+
+Under the picture, you see numbers from the renderer itself:
+
+- **draw calls**: how many times the GPU was asked to draw
+- **quads**: how many rectangles were drawn
+- **paint**: how long the last frame took to build, in milliseconds
+- **frames painted**: how many frames have been drawn since the step started
+
+Watch the last number. When nothing is happening, it does not move. The app does not draw frames it does not need. When you press a key, it draws a few frames for the animation. Then it stops again.
+
+## About the code
+
+Every step gives the page the same three things: the renderer, a `handle(action)` function for remote keys, and a `dispose()` function to clean up. That shape lives in a file called `demo.ts`, along with four colors. It is the one import in each listing that a real app would not have.
+
+## The steps
+
+1. [Set up the project](setup/): the two files every TV app starts with.
+2. [A node on a canvas](node/): draw one shape, and see what a frame costs.
+3. [Lay it out](layout/): put things in rows and columns, and add text.
+4. [Move focus](focus/): let the remote pick a card.
+5. [Two rails, one column](rails/): move up and down between rows.
+6. [Screens and Back](screens/): open a second screen, and go back.
+7. [Pictures and effects](pictures/): add pictures, and gray out the ones you cannot play.
+8. [Video and captions](video/): play a video with captions on top.
+
+When you finish, look at [the reference app](../reference-app/). It uses the same ideas to build a full streaming service. The [reference](../reference/core/) lists every function, tier by tier.

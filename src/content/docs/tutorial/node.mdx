@@ -1,0 +1,40 @@
+---
+title: A node on a canvas
+description: Draw one shape, and see what a frame costs.
+tableOfContents: false
+sidebar:
+  order: 2
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../components/Monitor.astro';
+import src from '../../../../steps/step1.ts?raw';
+
+<div class="lesson">
+<Monitor step="step-1" running="Step 2 · a node on a canvas" />
+<div class="notes">
+
+## What you wrote
+
+`createRenderer` takes two things: the canvas, and the text tool you picked. It gives back everything, already connected: the GPU code, the painter, the scene, a root node, and the adapter for whatever TV the page is running on. If the browser has no WebGL, it gives back `null`. That is the one case you handle yourself. Show the TV's own error message, because there is nothing to draw with.
+
+A `Node` is a rectangle that can hold other nodes. It has `x`, `y`, `w`, and `h`. It also has `scale`, `opacity`, `visible`, and `clip`. To draw a node, you write a `paint` method. Inside it, you call the painter. `p.rect(0, 0, this.w, this.h, color, radius)` draws the node's own box. The scene moves it to where `x` and `y` say.
+
+Colors are `[red, green, blue, alpha]`, each from 0 to 1. That is what the GPU wants. Changing colors into that form on every frame would cost time the TV does not have.
+
+Every number is in 1920 by 1080 pixels. It does not matter how big the canvas really is. Every 2017 TV gives an app this same screen size. So you design for it once.
+
+## What happened
+
+Look at the numbers under the picture. **One draw call.** A draw call is one request to the GPU to draw. Every shape, picture, and letter goes through one GPU program. The painter groups them together until the picture data changes.
+
+**One frame painted.** And the number stays there. The scene only draws when something calls `invalidate()`, or when something is moving. A screen that is doing nothing draws nothing. On a TV, that is the difference between a warm box and a hot one.
+
+## On a TV
+
+The `speak: false` line is only for this website, which has more than one renderer on it. Leave it out in a real app. When the viewer has the TV's voice guide turned on, every focus change is read out loud through the TV's speech system. Both LG and Samsung check for this.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="main.ts" />

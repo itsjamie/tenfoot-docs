@@ -1,0 +1,16 @@
+---
+title: The reference app
+description: ARENA+ is a full sports app with eleven screens, built on the library. It is the example to read after the tutorial.
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+ARENA+ is a full streaming app built with this library. It has a splash screen, profiles, a home screen, a live TV guide, a title page, an episode list, a video player, search with an on-screen keyboard, a saved list, settings, three genre grids, and the exit dialog Samsung requires. Every color and size comes from a design file. Every word and picture comes from a JSON feed the app downloads.
+
+<LinkCard title="Open ARENA+" description="The app, built with the same package. Use the arrow keys, Enter, and Backspace." href="../arena/index.html?screen=home" />
+
+## What to look at
+
+Press the Info key, or open it with `?debug=1`, to keep the debug overlay on screen while you move around. Each screen reports its draw calls, how many shapes it drew, and how much GPU memory its pictures hold.
+
+The app is put together the way the tutorial builds one. One file sets up the renderer, the focus engine, the router, and the screens, then steps aside. Each screen is a `Route`. Anything two screens share comes from `tenfoot/ui`. Every word and picture comes from the feed, so a screen never shows a title it was not given. The saved list copes with full or broken storage, because TV storage is small and not always reliable.

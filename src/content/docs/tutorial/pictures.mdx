@@ -1,0 +1,44 @@
+---
+title: Pictures and effects
+description: Add pictures, share GPU memory, and gray out the ones you cannot play.
+tableOfContents: false
+sidebar:
+  order: 7
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../components/Monitor.astro';
+import src from '../../../../steps/step6.ts?raw';
+
+<div class="lesson">
+<Monitor step="step-6" running="Step 7 · pictures and effects" />
+<div class="notes">
+
+## What you wrote
+
+`r.images.get(key)` gives you a handle right away. It fills in when the picture loads, and asks the scene to redraw. `p.image(handle, …)` draws nothing until then. The plate under it shows through. That is the loading placeholder every streaming app has.
+
+By default, the key is a URL. In this step, the page makes its own pictures as SVG gradients in data URLs. So nothing has to download.
+
+A real app passes a `resolve` function to `createRenderer`. It turns a key into a list of files to try, best first. The reference app's resolver works like this: a compressed ETC1 picture for a TV that supports it, the JPEG for one that does not, and a simple gradient with the same name if there are no photos at all. The loader takes the first one that works.
+
+**Effects** are the other half. `effects: ['grade']` adds a look to the GPU program when the renderer is created. `gl.setEffect('grade', [desaturate, dim, 0, 0])` sets its numbers once per frame. `p.pushEffect(FX_GRADE)` around a card's picture turns it on. A card you cannot play turns gray and says why.
+
+## What happened
+
+Ten pictures, twenty lines of text, two rows, and a focus ring. The counter says one draw call for all of it.
+
+Pictures share space on the GPU. Every card in the same space is drawn in one group. The gray cards cost nothing extra. An effect is just a number saved with the shape, not a different GPU program. So a screen full of blocked titles costs the same as a screen full of playable ones.
+
+If your app names no effects, it gets the exact same GPU program as before effects existed. A test in the project checks this byte for byte.
+
+## On a TV
+
+GPU memory for pictures is what a TV really runs out of. A full-screen backdrop is 8 megabytes as a normal image, and 1 megabyte as ETC1. The renderer keeps all pictures under a byte limit. When the limit is reached, it removes the pictures that were drawn least recently.
+
+The reference app asks for pictures in the order it paints them, and hands them to the renderer one at a time. So the screen decides which pictures share GPU space, not the network. That makes the draw-call count the same every time the app starts. That queue is `inOrder` in `tenfoot/ui`.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="main.ts" />

@@ -1,0 +1,43 @@
+---
+title: Set up the project
+description: The two files every TV app starts with, and why the build is ES5.
+sidebar:
+  order: 1
+---
+
+import { Code } from '@astrojs/starlight/components';
+import indexSrc from '../../../../starter/index.html?raw';
+import viteSrc from '../../../../starter/vite.config.ts?raw';
+
+A TV app is a web page with a canvas on it. The TV gives that page a screen that is 1920 by 1080 pixels. It also gives you a video layer under the page. The browser is whatever the TV came with. Everything else is up to you.
+
+Make a folder and install the tools:
+
+```sh
+mkdir my-tv-app && cd my-tv-app
+pnpm init
+pnpm add tenfoot
+pnpm add -D vite @vitejs/plugin-legacy typescript
+```
+
+## The page
+
+The canvas covers the whole screen. The video sits under it. We put the video in the HTML instead of making it later, for two reasons. The caption track has to be in the HTML. And the TV's own player connects to a real video element.
+
+Notice `preload="none"` and no `autoplay`. This keeps the TV's video decoder off while you browse. The player screen will call `play()` when it opens.
+
+<Code code={indexSrc} lang="html" title="index.html" />
+
+## The build
+
+Old TVs run old browsers. None of them can load modern JavaScript modules. So the build makes one old-style (ES5) file. The `@vitejs/plugin-legacy` plugin does this. It turns your code into something a 2017 browser can run. You still write modern TypeScript. Nothing in this file is special to the library.
+
+<Code code={viteSrc} lang="ts" title="vite.config.ts" />
+
+## Two rules for your own code
+
+**Do not use `async`/`await` or generators.** They turn into slow code on a 2017 TV. A TV app can use plain callbacks instead.
+
+**Do not use `fetch`.** Chromium 38 does not have it. Use `XMLHttpRequest`. `Promise` and `Map` are fine.
+
+Now you are ready to write `main.ts`. The [next step](../node/) is its first version.

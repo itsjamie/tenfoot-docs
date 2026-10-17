@@ -1,0 +1,33 @@
+---
+title: Type and badges
+description: Label, TrackedLabel, Paragraph, MetaLine, MarkedLine, and Badge, drawn live.
+tableOfContents: false
+sidebar:
+  order: 1
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../../components/Monitor.astro';
+import src from '../../../../../steps/widgets-text.ts?raw';
+
+<div class="lesson">
+<Monitor step="widgets-text" running="Type and badges" />
+<div class="notes">
+
+## What is on screen
+
+Every piece of text in the design is one of these.
+
+- **`Label`** is one line of text in one setting. `type.screenTitle` and `type.heading` are two of the settings the design names. A setting is a font plus its line height and letter spacing, so you never type those numbers by hand.
+- **`TrackedLabel`** is a label with extra space between the letters. The eyebrow at the top uses 0.16 em.
+- **`MetaLine`** is the dotted line under a title. Plain parts get a dot between them. A `{ badge }` part is drawn in a box. An `{ accent }` part is drawn in the accent color.
+- **`Paragraph`** wraps text at a width. Use it for anything that runs past one line.
+- **`MarkedLine`** draws the `●` in a line as a circle, because the font pictures do not have that character.
+- **`Badge`** is a small label in a box. `outline` sits on the ground. `onArt` is a dark plate for sitting on a picture. `live` is the red LIVE lockup with its dot.
+
+None of these take focus. The counter under the picture shows what a screen of type costs: text and shapes share one GPU program, so it is a handful of draw calls at most.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="widgets-text.ts" />

@@ -1,0 +1,30 @@
+---
+title: Ship it
+description: Build for webOS and Tizen, read the debug overlay on the TV, and find the TV makers' own checklists.
+---
+
+## Package the app
+
+The package installs two commands for this. Each takes your built folder and a folder holding the platform's app manifest and icons:
+
+```sh
+npx tenfoot-webos dist platforms/webos   # ./webos and an .ipk file beside it
+npx tenfoot-tizen dist platforms/tizen   # ./tizen, for `tizen package` to sign
+```
+
+`platforms/webos` holds `appinfo.json`, `icon.png` and `largeIcon.png`. `platforms/tizen` holds `config.xml` and `icon.png`. `tenfoot-webos` writes the `.ipk` itself, so you do not need the webOS SDK to build one. You do need it to install one: `ares-setup-device` once, then `ares-install` with the `.ipk` and `ares-launch` with your app id. For Tizen, sign and install with Tizen Studio's `tizen package -t wgt` and `tizen install`.
+
+`tenfoot-tizen` also adds the script tag for Samsung's `webapis.js` to the staged `index.html`. The screensaver, network and caption-settings calls only exist once it has loaded, and your own `index.html` stays the same for every platform.
+
+## On the TV
+
+Press the Info key on the remote, or open the app with `?debug=1`. The overlay shows frames per second, how long frames take, draw calls, shapes, GPU memory against its limit, and which item has focus. It only redraws when the screen does, so you can leave it on. `?inspect=1` copies the scene tree into the page, so the browser's Inspect Element can show it.
+
+## Pass the TV makers' checks
+
+Each store has its own list of what an app must do before it is approved. Those lists are long, they change, and they are the only ones that count. Read them, not a summary:
+
+- LG: [App Self Checklist](https://webostv.developer.lge.com/distribute/app-self-checklist) and the [App Approval Process](https://webostv.developer.lge.com/distribute/app-approval-process).
+- Samsung: the [Launch Checklist](https://developer.samsung.com/tv-seller-office/checklists-for-distribution/launch-checklist.html) and the [Application UI Description](https://developer.samsung.com/tv-seller-office/checklists-for-distribution/application-ui-description.html) in the Seller Office.
+
+The "On a TV" notes at the end of each tutorial step say which of those rules the library handles for you, and where your app has to act.

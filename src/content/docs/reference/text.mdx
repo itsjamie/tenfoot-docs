@@ -1,0 +1,37 @@
+---
+title: text
+description: Two text tools. You pick one by importing it. tenfoot/text/canvas and tenfoot/text/msdf.
+sidebar:
+  order: 2
+---
+
+Text is drawn by the tool you import. Only that tool ends up in your app. There is no single import that gives you both. That is on purpose. This way, the other tool is never in your code at all, not just left out by the bundler.
+
+## canvasText
+
+```ts
+import { canvasText } from 'tenfoot/text/canvas';
+```
+
+Uses the browser to draw each line of text into a picture on the GPU. You get the browser's fonts for free. Each different string is saved once. No font files to download. Right for most apps, and for any text that does not change often.
+
+## msdfText
+
+```ts
+import { msdfText } from 'tenfoot/text/msdf';
+import { msdfAuto } from 'tenfoot/msdf/auto'; // or /msdf/scale, /msdf/fwidth
+const r = createRenderer(canvas, {
+  msdf: msdfAuto,
+  text: msdfText({ fallback: canvasText, faces: [{ family, weight, atlas: 'font/ui.png', metrics: 'font/ui.bin' }] }),
+});
+```
+
+Draws each letter from a font picture made ahead of time. It stays sharp at any size. It never redraws letters, no matter how often the text changes. It needs two things. One is a **coverage variant** for the GPU program (`msdfAuto` picks one based on the GPU). The other is a **fallback** for anything it cannot draw. That means every string until the font picture has loaded, and any letter the font picture does not have.
+
+Fonts opt in one at a time, with `mode: 'glyph'` on the font object. One shape per letter is right for a big title. It is wrong for a grid of two hundred cards.
+
+`npx tenfoot-msdf --faces faces.json --out public/font` makes font pictures from `.ttf` files, using only what comes with Node. `faces.json` names the folder the fonts are in, the licence to copy beside the pictures, and one entry per face: `{ "name": "ui-sans-400", "file": "MySans-Regular.ttf", "weight": 400 }`. Run it with `--help` for the rest. A font matches on family and weight exactly, so bake every weight your design asks for.
+
+## Fonts
+
+A font is a plain object: `{ family, size, weight?, style?, mode?, track? }`. `track` is letter spacing in ems. It is part of the saved text, so a spaced-out title is still one draw. Pass the same object to `text.measure(str, font)` and `text.run(str, font)`. `TextSlot.get(text, str, font)` saves the result on a node between frames.

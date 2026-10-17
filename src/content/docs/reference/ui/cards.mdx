@@ -1,0 +1,30 @@
+---
+title: Cards
+description: Poster, LiveCard, and ArtTile, with badges, progress, a tag, and a blocked state.
+tableOfContents: false
+sidebar:
+  order: 3
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../../components/Monitor.astro';
+import src from '../../../../../steps/widgets-cards.ts?raw';
+
+<div class="lesson">
+<Monitor step="widgets-cards" running="Cards" />
+<div class="notes">
+
+## What is on screen
+
+- **`Poster`** is a tall picture with its caption under it. It can have a `title`, a `meta` line, a `badge` in the corner, or an `overlay` title drawn on the picture over a dark fade, which is how a genre tile looks. `blocked` says why the viewer cannot play it. The card turns gray and shows that reason instead of its meta line.
+- **`LiveCard`** is a wide picture with its caption on it. `live: true` adds the red LIVE lockup. `progress` draws a bar along the bottom edge: red for live, accent for everything else. `corner` is a small badge in the top right. `tag` is a label along the top.
+- **`ArtTile`** is just the picture, with rounded corners. It does not take focus. A hero or a backdrop is one of these.
+
+The pictures here are gradients the page makes for itself, so nothing downloads. In a real app, the picture keys are file names, and the app's `resolve` function turns them into files to try.
+
+The focus ring grows the card a little and draws a ring outside it. The ring follows the picture, not the caption, so a poster's ring stops at the bottom of its art.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="widgets-cards.ts" />

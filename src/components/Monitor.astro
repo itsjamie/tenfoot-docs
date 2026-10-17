@@ -1,0 +1,32 @@
+---
+/**
+ * A television on the page: the step's canvas in a frame, the numbers the renderer reports under
+ * it, and a remote beside it. The script wires whatever monitors it finds on the page.
+ */
+interface Props {
+  /** Which module to run: step-1 to step-7, or a widgets-* story. */
+  step: string;
+  /** What the meter says the picture is. */
+  running?: string;
+}
+const { step, running = '' } = Astro.props;
+const media = import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'arena/media/';
+---
+
+<div class="monitor not-content" data-step={step}>
+  <div class="frame">
+    <div class="screen" tabindex="0" data-media={media} aria-label="The step, running. Click, then use the arrow keys."></div>
+    <div class="meter"><span class="running">{running}</span><span class="readout">…</span><span class="status"></span></div>
+  </div>
+  <div class="pad" aria-label="Remote control">
+    <span></span><button data-key="up" aria-label="Up">↑</button><span></span>
+    <button data-key="left" aria-label="Left">←</button><button class="ok" data-key="select" aria-label="Select">OK</button><button data-key="right" aria-label="Right">→</button>
+    <span></span><button data-key="down" aria-label="Down">↓</button><span></span>
+    <button class="back" data-key="back" aria-label="Back">BACK</button>
+  </div>
+</div>
+
+<script>
+  import { mount } from '../scripts/monitor.ts';
+  mount();
+</script>

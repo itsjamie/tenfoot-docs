@@ -1,0 +1,20 @@
+{
+  // The tutorial's listings, type-checked against the published package's declarations: a step
+  // that stops compiling against a release is a page that teaches something that no longer works.
+  "compilerOptions": {
+    "target": "es2015",
+    // es2017 for String#padStart: the legacy build's core-js adds what Chromium 38 lacks.
+    "lib": ["es2017", "dom"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "types": []
+  },
+  "include": ["steps", "src/scripts"]
+}

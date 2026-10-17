@@ -1,0 +1,47 @@
+---
+title: Screens and Back
+description: Open a second screen, go back, and get the deep-link rule right.
+tableOfContents: false
+sidebar:
+  order: 6
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../components/Monitor.astro';
+import src from '../../../../steps/step5.ts?raw';
+
+<div class="lesson">
+<Monitor step="step-5" running="Step 6 · screens and Back" />
+<div class="notes">
+
+## What you wrote
+
+A **route** is one screen. It has four parts:
+
+- `node`: everything the screen draws.
+- `enter(arg)`: runs when the screen opens. It sets up focus and returns a function that takes it down again. The node is already visible and laid out when this runs, so positions are correct. `arg` is whatever `push` passed in. Here, that is which title the page is for.
+- `entry()`: the id where focus should land.
+- `key(action)`: optional. Handles a key before the router does. Return `false` to let the router handle arrows and Back.
+
+The **router** owns the stack of screens. It decides which node is visible, which scope is open, and in what order. `router.handle(action)` sends arrows to focus and sends Back to the stack. If Back has nowhere to go, it returns `false`. On the first screen, that means the app should close. Both LG and Samsung require this.
+
+Press <kbd>Enter</kbd> on a card. The status line shows the stack: `home > detail`. Press <kbd>Backspace</kbd>. You are back on Home, on the same card.
+
+## The rule most apps get wrong
+
+A TV can open your app straight to one piece of content. This can come from the TV's search, its home row, or a voice assistant. It is called a **deep link**.
+
+If your app opens the title page with nothing under it, the viewer's first Back press closes the app. That fails the TV makers' checks on both platforms.
+
+The `under` option fixes this. `router.register('detail', …, { under: 'home' })` says what belongs under this screen. `router.open(platform.link())` opens Home first, then the title page. Now Back works.
+
+LG, Samsung, and the browser each pass deep links in a different way. The renderer reads all three into one `LaunchLink`. `link: 'title'` says which parameter opens this route. So `?title=rivals` is the whole link.
+
+## On a TV
+
+Back on the first screen calls `platform.exit()`. On Samsung, you must ask the viewer first. `platform.confirmExit` is `true` there. On LG it is `false`, because LG shows its own exit popup and does not want yours. The [reference app](../../reference-app/) draws its exit dialog over a blurred copy of the screen.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="main.ts" />

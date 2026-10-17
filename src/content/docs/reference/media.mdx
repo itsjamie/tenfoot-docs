@@ -1,0 +1,20 @@
+---
+title: media and subtitles
+description: A player controller for your video element, and a caption layer that keeps time with it. tenfoot/media and tenfoot/subtitles.
+sidebar:
+  order: 7
+---
+
+Pass `video` to `createRenderer` and you get both `r.controller` and `r.subtitles`. Your player (Shaka, hls.js, bitmovin, or the TV's own) connects to the video element you own. The renderer reads the element's clock and state.
+
+## HtmlVideo
+
+`play()`, `pause()`, `seek(seconds)`, `stop()`, `time()`, `state` (with `status`, `duration`, `buffered`, and the audio and subtitle tracks), `on(fn)` for every change, `selectAudio(id)`, `selectSubtitle(id | null)`, `textTrack()`, `setVisible(on)`, `setBounds(rect)`. A failure is a status, not an exception. So there is one place to look.
+
+`status` is one of `idle loading playing paused buffering ended error`.
+
+## Subtitles
+
+A node. Add it where captions should appear. It only checks for new captions while it is on screen. The renderer feeds it the selected track. Where the TV has caption settings, it styles the captions from them. `setAvoid(rects)` keeps captions out of your controls. `active` is the list of captions on screen right now, which tests can read.
+
+It reads WebVTT from the video's `<track>`. Cue position settings (line, position, align) are not supported yet.

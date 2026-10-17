@@ -1,0 +1,48 @@
+---
+title: ui
+description: The widgets, design values, and screen vocabulary the sample app was built from. tenfoot/ui.
+sidebar:
+  order: 0
+  label: Overview
+---
+
+This is the one tier that the plain `tenfoot` import leaves out. That is on purpose. Every app wants a renderer. Only some want a widget set in one design. So you import it by name.
+
+```ts
+import { attach, createNav, Rail, Poster, Button, Screenful, inOrder } from 'tenfoot/ui';
+attach({ text: r.text, images: pictures, scene: r.scene, ring: null });
+```
+
+Call `attach` once, before you build a screen. It gives the widgets what they need: the text tool, the pictures, the scene, and the focus ring's shader (or null).
+
+## Describing a screen
+
+`createNav()` returns `strip(s)`, `grid(c)`, `pack(p)`, `region(r)`, `openScope(s)`, `closeScope(id)`, `move(dir)`, `focus(id)`, `current`, `host` (pass it to `createRenderer`), and `tick(now)` (call it from a dirty source for scrolling).
+
+A **strip** is a row or column of items. **Cells** are a grid of items. A **pack** stacks strips. A **region** is a surface that rows scroll through. A **scope** takes focus away from what is behind it.
+
+## See them drawn
+
+Each page below runs the real widgets on a small TV. Click the picture, then use the arrow keys.
+
+- [Type and badges](../text/): every way a line of text is set, and the small boxed labels.
+- [Buttons, chips, and pills](../controls/): the three button weights, filter chips you can choose, and pills.
+- [Cards](../cards/): posters, wide cards, and bare artwork, with badges, progress, and a blocked state.
+- [Rails](../rail/): a heading over a row of cards that scrolls, and Down between two of them.
+- [Grid](../grid/): a fixed-column field of posters that scrolls when it runs past the screen.
+- [Nav and list](../nav/): a left nav beside a list of rows, with Left and Right between them.
+- [Another design](../theme/): the same widgets restyled with `theme()`.
+
+## Widgets
+
+`Screenful` (a screen's root; lays out until nothing moves), `Label`, `TrackedLabel`, `MarkedLine`, `Paragraph`, `Focusable` (draws the ring and the grow animation), `Button`, `Pill`, `Chip`, `Badge`, `Poster`, `LiveCard`, `ArtTile`, `Rail`, `Bar`, `List`, `CardGrid`, `NavRail`, `MetaLine`. Plus drawing helpers: `paintArt`, `paintScrim`, `paintWash`, `paintBar`, `paintLine`.
+
+The four containers (`Rail`, `Bar`, `List`, `CardGrid`) hand back their own focus description. A screen says which cards it has. It never works out a position for focus.
+
+## Design values and files
+
+`color`, `type`, `radius`, `space`, `focus`, `tracking`, `sans()`, `mono()`, `lineBox()`, `borderBox()`, `focusRing()`, `RING_SHADER`. These are the sample app's design numbers, and every widget reads its numbers through them. `theme({ brand, color, radius, space, focus, tracking, family, type, screen })` changes them in place before a screen is built. Anything you leave out keeps the sample app's value, and a frame costs the same either way. The [Another design](../theme/) page shows it. `FACES` lists the font pictures the tier expects under `font/` in your app's public folder. They ship in the package: copy `node_modules/tenfoot/dist/font` to `public/font`. The shading ramps, the glow and the play icon are drawn by the tier itself.
+
+## Pictures in order
+
+`inOrder(images, resolve, caps)` hands the renderer one picture at a time, in the order screens ask for them. So the screen decides which pictures share GPU space, not the network. That makes the draw-call count the same every time the app starts. That lets a test hold it to a number.

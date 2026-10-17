@@ -1,0 +1,40 @@
+---
+title: Lay it out
+description: Put things in rows and columns, and add a line of text.
+tableOfContents: false
+sidebar:
+  order: 3
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../components/Monitor.astro';
+import src from '../../../../steps/step2.ts?raw';
+
+<div class="lesson">
+<Monitor step="step-2" running="Step 3 · lay it out" />
+<div class="notes">
+
+## What you wrote
+
+`Row`, `Column`, and `Grid` are the whole layout system. You can set `gap`, `padding`, `justify`, and `align`. A child can `grow` to fill space. A container places its children when it paints. You can also call `layout()` to do it right away. You will need that in the next step, to read positions before the first frame.
+
+There are no percentages, and no measure functions. This is on purpose. A TV screen is one size. A design gives you exact numbers.
+
+Text works like this. The text tool draws a string in a font once, and keeps the result as a small picture. That result is called a **run**. `TextSlot` holds the run on the node. So a label costs almost nothing after the first frame. `text.measure(str, font)` tells you how wide a string will be before you draw it.
+
+The font is a plain object: `family`, `size`, `weight`. You pass the same object to `measure` and to `run`. So they always agree.
+
+## What happened
+
+Still one draw call. Text and shapes use the same GPU program. All the text on screen lives in one shared picture on the GPU. So a heading over a row of cards is still one group.
+
+The canvas text tool uses the browser to draw letters. The other tool, MSDF, draws letters from a font picture made ahead of time. It stays sharp at any size. The [install page](../../install/) explains when to switch.
+
+## Try it
+
+In your own copy, change the `gap` or the card width. The row fixes itself. Nothing in the screen places a card by hand. That is the point. A screen puts containers together and gives them the numbers from the design.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="main.ts" />

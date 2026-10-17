@@ -1,0 +1,143 @@
+/* The monitor: a television set into the page. Everything else is Starlight's. */
+.monitor {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 156px;
+  gap: 1rem;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+.monitor .frame {
+  min-width: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.monitor .screen {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  background: #05070d;
+  border: 6px solid var(--sl-color-gray-5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.monitor .screen:focus-visible {
+  outline: 3px solid var(--sl-color-accent);
+  outline-offset: 2px;
+}
+.monitor .screen canvas {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.monitor .screen video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+.monitor .screen::after {
+  content: 'Click, then use the arrow keys';
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  font-family: var(--sl-font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+.monitor .screen:focus::after,
+.monitor .screen:focus-within::after {
+  content: '';
+}
+.monitor .meter {
+  display: grid;
+  gap: 0.2rem;
+  font-family: var(--sl-font-mono);
+  font-size: var(--sl-text-xs);
+  color: var(--sl-color-gray-2);
+  min-height: 2.4em;
+}
+.monitor .meter .running {
+  color: var(--sl-color-white);
+  font-weight: 600;
+}
+.monitor .meter .status {
+  color: var(--sl-color-gray-3);
+}
+.pad {
+  display: grid;
+  grid-template-columns: repeat(3, 44px);
+  grid-template-rows: repeat(3, 44px);
+  gap: 4px;
+  justify-content: center;
+  align-self: center;
+}
+.pad button {
+  border: 1px solid var(--sl-color-gray-5);
+  background: var(--sl-color-gray-6);
+  color: var(--sl-color-white);
+  border-radius: 8px;
+  font-family: var(--sl-font-mono);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.pad button:hover {
+  border-color: var(--sl-color-accent);
+}
+.pad .ok {
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.pad .back {
+  grid-column: 1 / 4;
+  height: 32px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  margin-top: 6px;
+}
+@media (max-width: 40rem) {
+  .monitor {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .pad {
+    justify-content: start;
+  }
+}
+
+/*
+ * A tutorial step or a widget story: the television takes two thirds of the page and stays put
+ * while the notes beside it scroll; the listing runs full width under both. The page gives up its table of
+ * contents and its 45rem column for the room.
+ */
+:root:has(.lesson) {
+  --sl-content-width: 100rem;
+}
+.lesson {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+.lesson .monitor {
+  position: sticky;
+  top: calc(var(--sl-nav-height) + 1rem);
+  margin: 0;
+}
+.lesson .notes > :first-child {
+  margin-top: 0;
+}
+@media (max-width: 72rem) {
+  .lesson {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .lesson .monitor {
+    position: static;
+  }
+}

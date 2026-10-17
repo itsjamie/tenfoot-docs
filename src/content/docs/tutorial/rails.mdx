@@ -1,0 +1,38 @@
+---
+title: Two rails, one column
+description: Move up and down between rows, and land where you expect.
+tableOfContents: false
+sidebar:
+  order: 5
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../components/Monitor.astro';
+import src from '../../../../steps/step4.ts?raw';
+
+<div class="lesson">
+<Monitor step="step-4" running="Step 5 · two rails, one column" />
+<div class="notes">
+
+## What you wrote
+
+A **pack** stacks strips in a column: `nav.pack({ id: 'body', axis: 'y', children: ['live', 'continue'] })`. Declare the pack first. Then declare the strips that belong to it.
+
+Now pressing Down from a row is not a guess about which card is closest. The engine goes up to the pack, then into the next row. And it lands on the card right under the one you left. Try it: press right three times on the top row, then press down. Then press up.
+
+Each shelf tells the engine where its cards are, using the positions from layout. It never adds a scroll offset. When a row scrolls (and the reference app's rows do), only the engine knows how far it moved. Your screen never has to subtract an offset from a position.
+
+## What happened
+
+Still one draw call, with two rows and nine cards.
+
+`onBlur` matters now. When focus leaves a row, that row's ring has to go away. The engine tells the strip. The strip does not have to check on its own.
+
+## Where this goes
+
+The reference app has a `Rail` widget. It is this shelf, plus a heading, plus a window that clips and scrolls. It also leaves extra room so the ring on the first card is not cut off. It lives in `tenfoot/ui` with the rest of the widgets. It talks to the engine the same way this shelf does.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="main.ts" />

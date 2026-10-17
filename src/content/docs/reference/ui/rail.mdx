@@ -1,0 +1,30 @@
+---
+title: Rails
+description: Two Rails in a pack. Cards scroll under a heading, and Down moves between rails.
+tableOfContents: false
+sidebar:
+  order: 4
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../../components/Monitor.astro';
+import src from '../../../../../steps/widgets-rail.ts?raw';
+
+<div class="lesson">
+<Monitor step="widgets-rail" running="Rails" />
+<div class="notes">
+
+## What is on screen
+
+Click the picture and hold Right. The cards slide under the heading. Press Down. You land on the card under the one you left.
+
+- **`Rail`** is a heading over a row of cards that scrolls. `viewport` is how wide the window is. `heading` and `seeAll` are the words on top. `rail.card(id, label, node)` adds a card.
+- The rail leaves room on its left and above its row, so the ring and the grow of a focused first card are not cut off by the window. That is why the cards do not start flush with the heading.
+- `rail.strip()` gives the focus engine the rail's cards, where they rest, and the window they scroll in. The engine decides how far to scroll and moves the row itself. Your screen never adds a scroll offset to anything.
+
+The rail reads where its cards settled, so it is declared after `layout()`. If the cards change (a new season, a new sort), declare it again rather than editing it.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="widgets-rail.ts" />

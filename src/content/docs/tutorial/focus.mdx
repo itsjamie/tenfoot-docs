@@ -1,0 +1,44 @@
+---
+title: Move focus
+description: Let the remote pick a card, and draw a ring around it.
+tableOfContents: false
+sidebar:
+  order: 4
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../components/Monitor.astro';
+import src from '../../../../steps/step3.ts?raw';
+
+<div class="lesson">
+<Monitor step="step-3" running="Step 4 · move focus" />
+<div class="notes">
+
+## What you wrote
+
+**Focus** is the card the remote is pointing at. Your app owns the focus engine. It hands the engine to the renderer with `focus: nav.host`.
+
+`createNav` comes from `tenfoot/ui`. It gives you a simple way to describe your screen. A **strip** is a row or column of things the remote can land on. You tell it how many there are, the id and spoken name of each one, and where each one is on screen. `onFocus(i)` runs when the remote lands on item `i`. The engine does the rest. It even remembers where you were.
+
+A **scope** keeps focus inside one screen. It also says where focus starts: `nav.openScope({ id: 'home', initial: 'rail-0' })`. Later, a dialog can open its own scope. When the dialog closes, focus goes back to where it was. No screen has to save that itself.
+
+The order matters. Declare the strip first. Then open the scope that lands on it.
+
+The focus ring is just part of the card. The card knows when it has focus, and draws a ring three pixels outside its own box. The library does not draw focus for you, because every design draws it differently. `scene.animate` grows the card a little over 150 milliseconds. The scene only draws frames while that animation runs.
+
+## What happened
+
+Press left and right. The status line shows which card has focus. The frame count goes up a little on each press. Then it stops.
+
+Still one draw call. The ring is a border, and a border is a shape in the same group as the card under it. The reference app's ring costs two more draw calls, because it uses its own GPU program for a glowing sweep. Switching programs ends a group. Changing a color does not.
+
+## On a TV
+
+This website sends keys to each demo by hand, because there are several demos on one page. A real app calls `r.input(handler)` once. The renderer turns the TV's key codes into simple names like `up`, `select`, `back`, and `playPause`. It also stops the TV from acting on any key your app used. And it opens the debug overlay on the Info key before your handler sees it.
+
+One Samsung detail. The TV only sends arrows, Enter, and Return by default. For any other key, your app has to ask. Asking for a key takes it away from the TV's own use. So `createRenderer` has a `keys` option where you list only the keys your app needs.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="main.ts" />

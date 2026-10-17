@@ -1,0 +1,658 @@
+ARENA+ demo artwork
+===================
+
+The photographs in this directory come from Wikimedia Commons and are used under the licences
+below. Each was cropped to the slot it fills and re-encoded as JPEG; nothing else was changed.
+Attribution is a condition of most of these licences, so this file ships with the images.
+
+This list is written from apps/arena/public/feed.json, which is what the app draws: every
+picture in it carries the same credit at runtime. Files with no entry here are generated
+gradients from tools/arena-art.mjs and are covered by this repository's own licence.
+
+What the licences do not settle
+-------------------------------
+
+A free copyright licence settles copyright and nothing else. The claims below run over parts of
+this set. None of them stops the pictures being used in a demo, and none of them is met by
+crediting the photographer; each is a condition on what the picture may be used for, so anyone
+taking this further than a demo has to decide about them deliberately.
+
+A PERMISSION WITH NO DEED. Nearly every licence below is a standard public licence, and the deed
+linked beside it is the whole of the terms. This file is not. Its grant is the rights-holder's
+own, a line in a website imprint quoted on the Commons page, which Commons accepts and the API
+reads cleanly. It is the closest thing in this set to a federation press image, and the only
+place its terms are written down is that page, so read the page before relying on the file:
+
+  live-1.jpg — Football match action
+  https://commons.wikimedia.org/wiki/File:Attila_Szalai_in_action_for_Hungary_in_the_international_match_(October_2020).jpg
+
+PERSONALITY RIGHTS. A photograph of an identifiable person may be taken and published, but in
+much of Europe it may not be used so as to suggest that the person endorses a product or a
+service, and a tile in a shipping app is a product context in a way a demo is not. Commons tags
+these files. Treat the tag as a floor rather than the list: identifiable athletes appear in
+roughly half this set, and Commons tags a file only when somebody has thought to.
+
+  grid-19.jpg — Alpine downhill skier
+  https://commons.wikimedia.org/wiki/File:Verena_Stuffer_alpine_downhill_racer.jpg
+  live-3.jpg — Single-seater qualifying
+  https://commons.wikimedia.org/wiki/File:2023-04-23_Motorsport,_ABB_FIA_Formula_E_World_Championship,_Berlin_E-Prix_2023_1DX_1445_by_Stepro.jpg
+  live-5.jpg — Basketball game
+  https://commons.wikimedia.org/wiki/File:2023-08-09_Deutschland_gegen_Kanada_(Basketball-L%C3%A4nderspiel)_by_Sandro_Halank%E2%80%93118.jpg
+  remind-3.jpg — Tennis serve
+  https://commons.wikimedia.org/wiki/File:Murray%27s_serve_V_Nadal.jpg
+
+TRADEMARKS. A sponsor hoarding, a kit badge or a competition mark stays a trademark inside a
+freely licensed photograph, and the licence grants nothing over it. Commons tags this file, and
+again the tag is a floor: brand hoardings are legible in several frames it does not tag.
+
+  cont-4.jpg — Pit stop
+  https://commons.wikimedia.org/wiki/File:Aston_Martin_pit_USGP_2021.jpg
+
+The files
+---------
+
+backdrop-1.jpg — Stadium at night
+  File:Champasak Stadium during at night 22Jan2026.jpg
+  https://commons.wikimedia.org/wiki/File:Champasak_Stadium_during_at_night_22Jan2026.jpg
+  author: AddedUpdatePoster
+  licence: CC0 (http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+
+banner-1.jpg — Football stadium interior, panoramic
+  File:Hampden Panorama.png
+  https://commons.wikimedia.org/wiki/File:Hampden_Panorama.png
+  author: Pommes104 at English Wikipedia ( Original text: Bernd Jatzwauk Pommes104 )
+  licence: CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
+
+cont-1.jpg — Training session
+  File:Dylan Nieuwenhuijs training January 2015.JPG
+  https://commons.wikimedia.org/wiki/File:Dylan_Nieuwenhuijs_training_January_2015.JPG
+  author: Denieuwetoekomst95
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+cont-10.jpg — Supporters on the pitch
+  File:The Crowd Are On The Pitch - Brentford - The Play-Offs - May 2013 - We Thought It Was All Over, It Was We Lost The Final (8727834947).jpg
+  https://commons.wikimedia.org/wiki/File:The_Crowd_Are_On_The_Pitch_-_Brentford_-_The_Play-Offs_-_May_2013_-_We_Thought_It_Was_All_Over,_It_Was_We_Lost_The_Final_(8727834947).jpg
+  author: Gareth Williams from Redhill, England
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+cont-11.jpg — Penalty save
+  File:Penalty save on the match of UEFA league.jpg
+  https://commons.wikimedia.org/wiki/File:Penalty_save_on_the_match_of_UEFA_league.jpg
+  author: Giggi12
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+cont-12.jpg — Sprint finish
+  File:141100 - Athletics track finish line from above - 3b - 2000 Sydney race photo.jpg
+  https://commons.wikimedia.org/wiki/File:141100_-_Athletics_track_finish_line_from_above_-_3b_-_2000_Sydney_race_photo.jpg
+  author: Sport the library
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+cont-13.jpg — Elite road race
+  File:2024 UCI Road World Championships Zurich Men Elite Road Race E 67.jpg
+  https://commons.wikimedia.org/wiki/File:2024_UCI_Road_World_Championships_Zurich_Men_Elite_Road_Race_E_67.jpg
+  author: Albinfo
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+cont-14.jpg — Winter pitch
+  File:Snow-covered football pitch - geograph.org.uk - 5624191.jpg
+  https://commons.wikimedia.org/wiki/File:Snow-covered_football_pitch_-_geograph.org.uk_-_5624191.jpg
+  author: Ian Calderwood
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+cont-15.jpg — Touring cars wheel to wheel
+  File:Robert Huff overtaking Andy Priaulx 2010 WTCC Race of Japan (Race 1).jpg
+  https://commons.wikimedia.org/wiki/File:Robert_Huff_overtaking_Andy_Priaulx_2010_WTCC_Race_of_Japan_(Race_1).jpg
+  author: Morio
+  licence: CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
+
+cont-16.jpg — Tennis player at Wimbledon
+  File:Tim Henman Wimbledon 2005 1.jpg
+  https://commons.wikimedia.org/wiki/File:Tim_Henman_Wimbledon_2005_1.jpg
+  author: Spiralz
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+cont-17.jpg — Basketball game
+  File:Minnesota Lynx teammates huddle on the court in the Lynx vs Sun game at Target Center.jpg
+  https://commons.wikimedia.org/wiki/File:Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg
+  author: Lorie Shaull
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+cont-18.jpg — Football match, 1908
+  File:Sanisidro football match 1908.jpg
+  https://commons.wikimedia.org/wiki/File:Sanisidro_football_match_1908.jpg
+  author: Unknown author Unknown author
+  licence: Public domain
+
+cont-19.jpg — British Grand Prix, 1976
+  File:1976 British Grand Prix Hans Stuck.jpg
+  https://commons.wikimedia.org/wiki/File:1976_British_Grand_Prix_Hans_Stuck.jpg
+  author: Gillfoto
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+cont-2.jpg — Football team celebrating
+  File:Spain national football team Euro 2012 trophy 02.jpg
+  https://commons.wikimedia.org/wiki/File:Spain_national_football_team_Euro_2012_trophy_02.jpg
+  author: Илья Хохлов
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+cont-20.jpg — Tennis player, 1980
+  File:Chris Lewis, New Zealand Tennis Player (February 1980) (24874283479).jpg
+  https://commons.wikimedia.org/wiki/File:Chris_Lewis,_New_Zealand_Tennis_Player_(February_1980)_(24874283479).jpg
+  author: Archives New Zealand from New Zealand
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+cont-21.jpg — Football match, 1983
+  File:Renato cesarini v racing nacional 1983.jpg
+  https://commons.wikimedia.org/wiki/File:Renato_cesarini_v_racing_nacional_1983.jpg
+  author: Enrique Boeri
+  licence: Public domain
+
+cont-22.jpg — Football match, 1988
+  File:Grêmio FBPA x River Plate - Supercopa 1988.jpg
+  https://commons.wikimedia.org/wiki/File:Gr%C3%AAmio_FBPA_x_River_Plate_-_Supercopa_1988.jpg
+  author: Unknown author Unknown author
+  licence: Public domain
+
+cont-23.jpg — Runner at a meeting, 1938
+  File:Biegacz Syreny Warszawa Józef Noji na zawodach w 1938.jpg
+  https://commons.wikimedia.org/wiki/File:Biegacz_Syreny_Warszawa_J%C3%B3zef_Noji_na_zawodach_w_1938.jpg
+  author: Anonymous Unknown author
+  licence: Public domain
+
+cont-3.jpg — Empty ground from the stands
+  File:DZ6 2354 Empty bleachers and a covered grandstand overlook a quiet artificial-turf sports field at dusk.jpg
+  https://commons.wikimedia.org/wiki/File:DZ6_2354_Empty_bleachers_and_a_covered_grandstand_overlook_a_quiet_artificial-turf_sports_field_at_dusk.jpg
+  author: PattayaPatrol
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+cont-4.jpg — Pit stop
+  File:Aston Martin pit USGP 2021.jpg
+  https://commons.wikimedia.org/wiki/File:Aston_Martin_pit_USGP_2021.jpg
+  author: Declan M Martin
+  licence: Public domain
+
+cont-5.jpg — Tennis serve
+  File:Ernests Gulbis Serve 01.jpg
+  https://commons.wikimedia.org/wiki/File:Ernests_Gulbis_Serve_01.jpg
+  author: IvanAndreevich
+  licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0)
+
+cont-6.jpg — Dugouts at an empty ground
+  File:Managers' dugouts at the ASM Stadium - geograph.org.uk - 2237370.jpg
+  https://commons.wikimedia.org/wiki/File:Managers%27_dugouts_at_the_ASM_Stadium_-_geograph.org.uk_-_2237370.jpg
+  author: Steve Daniels
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+cont-7.jpg — The away end
+  File:The away supporters end - Stadium MK - geograph.org.uk - 3887405.jpg
+  https://commons.wikimedia.org/wiki/File:The_away_supporters_end_-_Stadium_MK_-_geograph.org.uk_-_3887405.jpg
+  author: Richard Humphrey
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+cont-8.jpg — Non-league ground
+  File:Kington Town Football Club - geograph.org.uk - 1728422.jpg
+  https://commons.wikimedia.org/wiki/File:Kington_Town_Football_Club_-_geograph.org.uk_-_1728422.jpg
+  author: Trevor Rickard
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+cont-9.jpg — Corner kick
+  File:Soccer Player Taking Corner Kick.jpg
+  https://commons.wikimedia.org/wiki/File:Soccer_Player_Taking_Corner_Kick.jpg
+  author: 23dww01
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+episode-1.jpg — Preseason training
+  File:Zach Pfeffer at Preseason Training for the Philadelphia Union, Jan 2011.jpg
+  https://commons.wikimedia.org/wiki/File:Zach_Pfeffer_at_Preseason_Training_for_the_Philadelphia_Union,_Jan_2011.jpg
+  author: Something Original ( talk )
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+episode-2.jpg — Training session
+  File:Flickr - tpower1978 - Training session.jpg
+  https://commons.wikimedia.org/wiki/File:Flickr_-_tpower1978_-_Training_session.jpg
+  author: Tsutomu Takasu
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+episode-3.jpg — Supporters’ coach at the ground
+  File:Blackpool supporters coach at Wembley Stadium - geograph.org.uk - 2963540.jpg
+  https://commons.wikimedia.org/wiki/File:Blackpool_supporters_coach_at_Wembley_Stadium_-_geograph.org.uk_-_2963540.jpg
+  author: Terry Robinson
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+episode-4.jpg — Press conference
+  File:Vítor Pereira at press conference (cropped).jpg
+  https://commons.wikimedia.org/wiki/File:V%C3%ADtor_Pereira_at_press_conference_(cropped).jpg
+  author: Богдан Заяц
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+grid-1.jpg — Cup winners at Wembley
+  File:Wembley Stadium - Cup Winners - geograph.org.uk - 7426798.jpg
+  https://commons.wikimedia.org/wiki/File:Wembley_Stadium_-_Cup_Winners_-_geograph.org.uk_-_7426798.jpg
+  author: Colin Smith
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-10.jpg — Free-kick wall
+  File:Wall on direct free kick, Sogndal-Rosenborg 07-15-2017.jpg
+  https://commons.wikimedia.org/wiki/File:Wall_on_direct_free_kick,_Sogndal-Rosenborg_07-15-2017.jpg
+  author: Bjørn Erik Pedersen
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-11.jpg — Assistant referee
+  File:Linesman (soccer).jpg
+  https://commons.wikimedia.org/wiki/File:Linesman_(soccer).jpg
+  author: Robert Gale
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+grid-12.jpg — Stadium scoreboard
+  File:Scoreboard at San Francisco Bay Area Stadium.jpg
+  https://commons.wikimedia.org/wiki/File:Scoreboard_at_San_Francisco_Bay_Area_Stadium.jpg
+  author: Mxn
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-13.jpg — Floodlit pitch
+  File:Football Under Floodlights - geograph.org.uk - 619765.jpg
+  https://commons.wikimedia.org/wiki/File:Football_Under_Floodlights_-_geograph.org.uk_-_619765.jpg
+  author: Martin Addison
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-14.jpg — Sprint semi-final
+  File:211000 - Athletics track 100m semi Don Elgin action - 3b - 2000 Sydney race photo.jpg
+  https://commons.wikimedia.org/wiki/File:211000_-_Athletics_track_100m_semi_Don_Elgin_action_-_3b_-_2000_Sydney_race_photo.jpg
+  author: Sport the library
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+grid-15.jpg — Stadium in a snowstorm
+  File:Berlin - Olympic Stadium in Snowstorm.jpg
+  https://commons.wikimedia.org/wiki/File:Berlin_-_Olympic_Stadium_in_Snowstorm.jpg
+  author: Roger Wollstadt
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-16.jpg — Stadium clock
+  File:Centaurs RFC stadium - seats looking southwards towards the Gillette clock tower - geograph.org.uk - 1059186.jpg
+  https://commons.wikimedia.org/wiki/File:Centaurs_RFC_stadium_-_seats_looking_southwards_towards_the_Gillette_clock_tower_-_geograph.org.uk_-_1059186.jpg
+  author: J Taylor
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-17.jpg — Trophies in a cabinet
+  File:Celtic FC trophy cabinet (geograph 7734823) (one club man).jpg
+  https://commons.wikimedia.org/wiki/File:Celtic_FC_trophy_cabinet_(geograph_7734823)_(one_club_man).jpg
+  author: Thomas Nugent
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-18.jpg — Referee
+  File:Darren Drysdale.jpg
+  https://commons.wikimedia.org/wiki/File:Darren_Drysdale.jpg
+  author: Yaffa
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-19.jpg — Alpine downhill skier
+  File:Verena Stuffer alpine downhill racer.jpg
+  https://commons.wikimedia.org/wiki/File:Verena_Stuffer_alpine_downhill_racer.jpg
+  author: This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+grid-2.jpg — Supporters in the stand
+  File:2014-06-07-Football-EC final-Fan-crowd.JPG
+  https://commons.wikimedia.org/wiki/File:2014-06-07-Football-EC_final-Fan-crowd.JPG
+  author: Rosso Robot
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+grid-20.jpg — Rider on a road race climb
+  File:Japan Cup Cycle Road Race 2024 PA200529.jpg
+  https://commons.wikimedia.org/wiki/File:Japan_Cup_Cycle_Road_Race_2024_PA200529.jpg
+  author: Fukumoto
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-21.jpg — Basketball jump shot
+  File:Rusty Clark jump shot 1969.jpeg
+  https://commons.wikimedia.org/wiki/File:Rusty_Clark_jump_shot_1969.jpeg
+  author: Unknown author Unknown author
+  licence: Public domain
+
+grid-22.jpg — Racing on the Bonneville salt flats
+  File:Motorcycle Racing on Bonneville Salt Flats (53109478064).jpg
+  https://commons.wikimedia.org/wiki/File:Motorcycle_Racing_on_Bonneville_Salt_Flats_(53109478064).jpg
+  author: BLMUtah
+  licence: Public domain
+
+grid-23.jpg — Runner at an indoor meeting
+  File:Track and Field - 2015 Armory Invitational runner.jpg
+  https://commons.wikimedia.org/wiki/File:Track_and_Field_-_2015_Armory_Invitational_runner.jpg
+  author: Steven Pisano
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+grid-24.jpg — Open-water swimmer
+  File:Open Water Swimmers - geograph.org.uk - 4267212.jpg
+  https://commons.wikimedia.org/wiki/File:Open_Water_Swimmers_-_geograph.org.uk_-_4267212.jpg
+  author: Matthew Chadwick
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-25.jpg — Players in training
+  File:Burton Albion Players Training 03052025 (12).jpg
+  https://commons.wikimedia.org/wiki/File:Burton_Albion_Players_Training_03052025_(12).jpg
+  author: Timmy96
+  licence: CC0 (http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+
+grid-26.jpg — Two players in a duel
+  File:PSV tegen Feyenoord 1-2. Wijnstekers in duel met Thoresen van PSV, Bestanddeelnr 932-0386.jpg
+  https://commons.wikimedia.org/wiki/File:PSV_tegen_Feyenoord_1-2._Wijnstekers_in_duel_met_Thoresen_van_PSV,_Bestanddeelnr_932-0386.jpg
+  author: Hans van Dijk for Anefo
+  licence: CC0 (http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+
+grid-27.jpg — Supporters with a banner
+  File:World Cup 1994 - Bulgaria v Germany - banners from stands.jpg
+  https://commons.wikimedia.org/wiki/File:World_Cup_1994_-_Bulgaria_v_Germany_-_banners_from_stands.jpg
+  author: Jonathan Schilling
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-28.jpg — Team with the cup
+  File:Independiente copa intercontinental.jpg
+  https://commons.wikimedia.org/wiki/File:Independiente_copa_intercontinental.jpg
+  author: Unknown author Unknown author
+  licence: Public domain
+
+grid-29.jpg — Corner flag
+  File:Sandbach United F.C. - pitch and corner flag - Jul 2025.jpg
+  https://commons.wikimedia.org/wiki/File:Sandbach_United_F.C._-_pitch_and_corner_flag_-_Jul_2025.jpg
+  author: Dominic Nelson
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-3.jpg — Floodlight pylon
+  File:Tour of Sewell Group Craven Park NE Floodlight Detail.jpg
+  https://commons.wikimedia.org/wiki/File:Tour_of_Sewell_Group_Craven_Park_NE_Floodlight_Detail.jpg
+  author: Hullian111
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-30.jpg — Tennis doubles
+  File:Doubles match on outside court at Wimbledon 1988 - geograph.org.uk - 2473163.jpg
+  https://commons.wikimedia.org/wiki/File:Doubles_match_on_outside_court_at_Wimbledon_1988_-_geograph.org.uk_-_2473163.jpg
+  author: Barry Shimmon
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-31.jpg — Velodrome
+  File:Journée portes ouvertes au vélodrome de Saint-Quentin-en-Yvelines le 1er février 2014 - 04.jpg
+  https://commons.wikimedia.org/wiki/File:Journ%C3%A9e_portes_ouvertes_au_v%C3%A9lodrome_de_Saint-Quentin-en-Yvelines_le_1er_f%C3%A9vrier_2014_-_04.jpg
+  author: Lionel Allorge
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+grid-32.jpg — Football team photograph, 1930s
+  File:StateLibQld 1 291883 Windsor Australian Rules Football Club team photograph, 1930.jpg
+  https://commons.wikimedia.org/wiki/File:StateLibQld_1_291883_Windsor_Australian_Rules_Football_Club_team_photograph,_1930.jpg
+  author: Riley, Sidney
+  licence: Public domain
+
+grid-33.jpg — Pit lane
+  File:Pit lane 2014 Singapore GP.jpg
+  https://commons.wikimedia.org/wiki/File:Pit_lane_2014_Singapore_GP.jpg
+  author: Morio
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-34.jpg — Swimmer after a race
+  File:Lillie Nordmann, 2023 Pac-12 Championships, 200 yard freestyle preliminaries post-race - 24 February 2023.jpg
+  https://commons.wikimedia.org/wiki/File:Lillie_Nordmann,_2023_Pac-12_Championships,_200_yard_freestyle_preliminaries_post-race_-_24_February_2023.jpg
+  author: Tanis Coralee Leonhardi
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-35.jpg — Small club ground
+  File:Burnham Football Club 2021.jpg
+  https://commons.wikimedia.org/wiki/File:Burnham_Football_Club_2021.jpg
+  author: Paul Butler
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-36.jpg — Starting grid
+  File:Starting grid at SUZUKA 1000km THE FINAL (12).jpg
+  https://commons.wikimedia.org/wiki/File:Starting_grid_at_SUZUKA_1000km_THE_FINAL_(12).jpg
+  author: Tokumeigakarinoaoshima
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-4.jpg — Goal and pitch
+  File:Football pitch at Craster - geograph.org.uk - 1188742.jpg
+  https://commons.wikimedia.org/wiki/File:Football_pitch_at_Craster_-_geograph.org.uk_-_1188742.jpg
+  author: Oliver Dixon
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+grid-5.jpg — Away supporters
+  File:Supporters FC Red Bull Salzburg Away 22.JPG
+  https://commons.wikimedia.org/wiki/File:Supporters_FC_Red_Bull_Salzburg_Away_22.JPG
+  author: Werner100359
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-6.jpg — Football boots
+  File:Boots of Filippo Inzaghi.jpg
+  https://commons.wikimedia.org/wiki/File:Boots_of_Filippo_Inzaghi.jpg
+  author: Дмитрий Кошелев
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-7.jpg — Cup presentation
+  File:1999 FA Cup Final trophy presentation (cropped).jpg
+  https://commons.wikimedia.org/wiki/File:1999_FA_Cup_Final_trophy_presentation_(cropped).jpg
+  author: Michael Cairns
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+grid-8.jpg — Stadium exterior
+  File:La Bombonera football stadium.jpg
+  https://commons.wikimedia.org/wiki/File:La_Bombonera_football_stadium.jpg
+  author: Julia Sumangil
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+grid-9.jpg — Terraces
+  File:Wycombe Wanderers FC, Adams Park Woodlands Stand - geograph.org.uk - 1572514.jpg
+  https://commons.wikimedia.org/wiki/File:Wycombe_Wanderers_FC,_Adams_Park_Woodlands_Stand_-_geograph.org.uk_-_1572514.jpg
+  author: Nigel Cox
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+hero-1.jpg — Floodlit football stadium on a match night
+  File:Mecz piłkarski Wisła Kraków - Zagłębie Sosnwoiec, 28 października 2022, Pożegnanie Stadionu Ludowego, KP.jpg
+  https://commons.wikimedia.org/wiki/File:Mecz_pi%C5%82karski_Wis%C5%82a_Krak%C3%B3w_-_Zag%C5%82%C4%99bie_Sosnwoiec,_28_pa%C5%BAdziernika_2022,_Po%C5%BCegnanie_Stadionu_Ludowego,_KP.jpg
+  author: Krzysztof Popławski
+  licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0)
+
+live-1.jpg — Football match action
+  File:Attila Szalai in action for Hungary in the international match (October 2020).jpg
+  https://commons.wikimedia.org/wiki/File:Attila_Szalai_in_action_for_Hungary_in_the_international_match_(October_2020).jpg
+  author: mlsz.hu – the official website of the Hungarian Football Federation
+  licence: Attribution
+
+live-2.jpg — Header duel
+  File:Gomis and Neustädter in a header duel (October 2017).jpg
+  https://commons.wikimedia.org/wiki/File:Gomis_and_Neust%C3%A4dter_in_a_header_duel_(October_2017).jpg
+  author: senolsengul at Pixabay
+  licence: CC0 (http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+
+live-3.jpg — Single-seater qualifying
+  File:2023-04-23 Motorsport, ABB FIA Formula E World Championship, Berlin E-Prix 2023 1DX 1445 by Stepro.jpg
+  https://commons.wikimedia.org/wiki/File:2023-04-23_Motorsport,_ABB_FIA_Formula_E_World_Championship,_Berlin_E-Prix_2023_1DX_1445_by_Stepro.jpg
+  author: Steffen Prößdorf
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+live-4.jpg — City marathon runners
+  File:Marathon runners near the end of the race - geograph.org.uk - 6142899.jpg
+  https://commons.wikimedia.org/wiki/File:Marathon_runners_near_the_end_of_the_race_-_geograph.org.uk_-_6142899.jpg
+  author: Stephen Craven
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+live-5.jpg — Basketball game
+  File:2023-08-09 Deutschland gegen Kanada (Basketball-Länderspiel) by Sandro Halank–118.jpg
+  https://commons.wikimedia.org/wiki/File:2023-08-09_Deutschland_gegen_Kanada_(Basketball-L%C3%A4nderspiel)_by_Sandro_Halank%E2%80%93118.jpg
+  author: Sandro Halank, Wikimedia Commons
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+more-1.jpg — Motorsport
+  File:FIA F3 Austria 2021 Nr. 25 Edgar (corner).jpg
+  https://commons.wikimedia.org/wiki/File:FIA_F3_Austria_2021_Nr._25_Edgar_(corner).jpg
+  author: Lukas Raich
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+more-2.jpg — Road running
+  File:Team Yokota welcomes runners for 45th Annual Frostbite Road Race (9485738).jpg
+  https://commons.wikimedia.org/wiki/File:Team_Yokota_welcomes_runners_for_45th_Annual_Frostbite_Road_Race_(9485738).jpg
+  author: U.S. Air Force photo by Senior Airman Samantha White
+  licence: Public domain
+
+more-3.jpg — Athletics track
+  File:New Clark City Stadium.jpg
+  https://commons.wikimedia.org/wiki/File:New_Clark_City_Stadium.jpg
+  author: Gabriela Liana S. Barela for the Philippine Information Agency (PIA 3)
+  licence: Public domain
+
+more-4.jpg — Match crowd
+  File:City of Manchester Stadium Crowd Against Hull.jpg
+  https://commons.wikimedia.org/wiki/File:City_of_Manchester_Stadium_Crowd_Against_Hull.jpg
+  author: AGilhooley
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+more-5.jpg — Floodlights
+  File:Floodlights of Aberystwyth Town F.C. - geograph.org.uk - 5155582.jpg
+  https://commons.wikimedia.org/wiki/File:Floodlights_of_Aberystwyth_Town_F.C._-_geograph.org.uk_-_5155582.jpg
+  author: John Lucas
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+poster-1.jpg — Footballer on the pitch, portrait
+  File:CINvCLE 2017-05-17 - Garrett Halfhill (34751512236) (cropped).jpg
+  https://commons.wikimedia.org/wiki/File:CINvCLE_2017-05-17_-_Garrett_Halfhill_(34751512236)_(cropped).jpg
+  author: Hayden Schiff from Cincinnati, USA
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+preview-1.jpg — Football match in play
+  File:Pre-season friendly football match between Sky sports verse Kataka FC played in Mbale stadium.jpg
+  https://commons.wikimedia.org/wiki/File:Pre-season_friendly_football_match_between_Sky_sports_verse_Kataka_FC_played_in_Mbale_stadium.jpg
+  author: Seruinda
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+profile-1.jpg — Football on grass
+  File:Adidas soccer ball on a grass pitch (Unsplash).jpg
+  https://commons.wikimedia.org/wiki/File:Adidas_soccer_ball_on_a_grass_pitch_(Unsplash).jpg
+  author: Peter Glaser baraida
+  licence: CC0 (http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+
+profile-2.jpg — Racquets and balls on clay
+  File:Tennis Racquets and Balls on a Clay Court.jpg
+  https://commons.wikimedia.org/wiki/File:Tennis_Racquets_and_Balls_on_a_Clay_Court.jpg
+  author: KeepActive Australia from Melbourne, VIC, Australia
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+profile-3.jpg — Basketball through the hoop
+  File:2011-06-07 Basketball in hoop still shot.jpg
+  https://commons.wikimedia.org/wiki/File:2011-06-07_Basketball_in_hoop_still_shot.jpg
+  author: Ildar Sagdejev ( Specious )
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+profile-4.jpg — Running track lanes
+  File:Athletics track - geograph.org.uk - 4704803.jpg
+  https://commons.wikimedia.org/wiki/File:Athletics_track_-_geograph.org.uk_-_4704803.jpg
+  author: DS Pugh
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+remind-1.jpg — Football trophy
+  File:European Cup Winners Cup (8024436274).jpg
+  https://commons.wikimedia.org/wiki/File:European_Cup_Winners_Cup_(8024436274).jpg
+  author: Smabs Sputzer from Stockport, UK
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+remind-2.jpg — Racing car on circuit
+  File:Formel3 racing car 2 amk.jpg
+  https://commons.wikimedia.org/wiki/File:Formel3_racing_car_2_amk.jpg
+  author: user:AngMoKio
+  licence: CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5)
+
+remind-3.jpg — Tennis serve
+  File:Murray's serve V Nadal.jpg
+  https://commons.wikimedia.org/wiki/File:Murray%27s_serve_V_Nadal.jpg
+  author: Madeleine Ball
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+remind-4.jpg — Basketball arena
+  File:2019 NCAA Men's Basketball Finals Game 3 crowd.jpg
+  https://commons.wikimedia.org/wiki/File:2019_NCAA_Men%27s_Basketball_Finals_Game_3_crowd.jpg
+  author: Howard the Duck
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+result-1.jpg — Champions celebrating
+  File:PSG champion de France 2014-2015.JPG
+  https://commons.wikimedia.org/wiki/File:PSG_champion_de_France_2014-2015.JPG
+  author: Liondartois
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+result-2.jpg — Football match, 1921
+  File:Soccer team match action shot 1921 (3191675058).jpg
+  https://commons.wikimedia.org/wiki/File:Soccer_team_match_action_shot_1921_(3191675058).jpg
+  author: Snyder, Frank R. Flickr: Miami U. Libraries - Digital Collections
+  licence: Public domain
+
+result-3.jpg — Trophy cabinet
+  File:Celtic FC trophy cabinet (geograph 7734823).jpg
+  https://commons.wikimedia.org/wiki/File:Celtic_FC_trophy_cabinet_(geograph_7734823).jpg
+  author: Thomas Nugent
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+result-4.jpg — Athlete training
+  File:Young attractive man athlete doing exercise with the barbell in the gym.jpg
+  https://commons.wikimedia.org/wiki/File:Young_attractive_man_athlete_doing_exercise_with_the_barbell_in_the_gym.jpg
+  author: Nenad Stojkovic
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+result-5.jpg — Chamonix valley, Mont Blanc massif
+  File:Chamonix valley from la Flégère,2010 07.JPG
+  https://commons.wikimedia.org/wiki/File:Chamonix_valley_from_la_Fl%C3%A9g%C3%A8re,2010_07.JPG
+  author: Ximonic , Simo Räsänen
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+result-6.jpg — Cycling peloton
+  File:Japan Cup Cycle Road Race 2019 PA200848.jpg
+  https://commons.wikimedia.org/wiki/File:Japan_Cup_Cycle_Road_Race_2019_PA200848.jpg
+  author: Fukumoto
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+result-7.jpg — Football ground from above
+  File:Aerial view of Kassam Stadium, Oxford - geograph.org.uk - 3469436.jpg
+  https://commons.wikimedia.org/wiki/File:Aerial_view_of_Kassam_Stadium,_Oxford_-_geograph.org.uk_-_3469436.jpg
+  author: Dave Price
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+result-8.jpg — Referee
+  File:Visar Kastrati - Referee.jpg
+  https://commons.wikimedia.org/wiki/File:Visar_Kastrati_-_Referee.jpg
+  author: Roofflat
+  licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+
+saved-1.jpg — Goal celebration
+  File:Crystal Palace players celebrate a goal - geograph.org.uk - 138708.jpg
+  https://commons.wikimedia.org/wiki/File:Crystal_Palace_players_celebrate_a_goal_-_geograph.org.uk_-_138708.jpg
+  author: Jon Bryant
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+saved-2.jpg — Players’ tunnel
+  File:Players Tunnel - Wembley - geograph.org.uk - 4624479.jpg
+  https://commons.wikimedia.org/wiki/File:Players_Tunnel_-_Wembley_-_geograph.org.uk_-_4624479.jpg
+  author: Paul Gillett
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+saved-3.jpg — Sprint start
+  File:Start blocks.JPG
+  https://commons.wikimedia.org/wiki/File:Start_blocks.JPG
+  author: LexSprinter
+  licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)
+
+saved-4.jpg — Supporters with flags
+  File:Supporters de la sélection algerienne, Coups du monde 2014, Brazil.jpg
+  https://commons.wikimedia.org/wiki/File:Supporters_de_la_s%C3%A9lection_algerienne,_Coups_du_monde_2014,_Brazil.jpg
+  author: Magharebia
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+saved-5.jpg — Long-distance runner
+  File:Chemutai Rionotukei.jpg
+  https://commons.wikimedia.org/wiki/File:Chemutai_Rionotukei.jpg
+  author: Ricardo from Sao Paulo, Brazil
+  licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)
+
+saved-6.jpg — Night match under lights
+  File:Football Under Floodlights - geograph.org.uk - 619765.jpg
+  https://commons.wikimedia.org/wiki/File:Football_Under_Floodlights_-_geograph.org.uk_-_619765.jpg
+  author: Martin Addison
+  licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+
+saved-7.jpg — Tennis player
+  File:Lourdes Domínguez Lino 2, 2015 Wimbledon Qualifying - Diliff.jpg
+  https://commons.wikimedia.org/wiki/File:Lourdes_Dom%C3%ADnguez_Lino_2,_2015_Wimbledon_Qualifying_-_Diliff.jpg
+  author: Diliff
+  licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0)

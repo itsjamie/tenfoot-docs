@@ -1,0 +1,34 @@
+---
+title: images
+description: Picture keys, resolvers, file options, GPU pages, and the memory limit. Part of tenfoot/core.
+sidebar:
+  order: 8
+---
+
+`r.images.get(key)` gives you an `ImageHandle` right away. It fills in when the picture loads. By default, the key is a URL. A `resolve` function turns a key into a list of files to try.
+
+```ts
+const resolve: Resolver = (key, caps) => [
+  { url: key + '.ktx', format: 'etc1', container: 'ktx', alpha: { companion: key + '.a.ktx', channel: 'r' } },
+  { url: key + '.jpg' },
+  { url: key + '.svg' },
+];
+```
+
+| Field | What it is |
+| --- | --- |
+| `url` | the file to download |
+| `format` | a compressed format the TV must support: `etc1`, `dxt5`, or others in `FORMATS` |
+| `container` | `ktx` or `pkm`, or one you registered with `containers` |
+| `alpha` | ETC1 has no transparency, so a second file carries it in one color channel |
+| `mask` | a one-color picture; the color comes from the tint |
+
+The loader tries each file in order. It skips formats the TV cannot use. It puts the picture on a shared **page** (a block of GPU memory), or on a page of its own if it is bigger than half a page. A page holds one format only. That is why a compressed photo cannot share a page with the shading drawn over it.
+
+## The limit
+
+Every page counts against `gl.budget`, in bytes. When a new picture would go over, the pages drawn least recently are dropped. A `lowMemory` event drops more. A dropped picture comes back the next time something on screen draws it. `r.diagnostics().images()` shows loads in progress, bytes against the limit, how many pages were dropped, and every page in memory.
+
+## Tools
+
+`npx tenfoot-textures <folder>` makes ETC1 and DXT5 files, with alpha companions, from a folder of SVGs. `npx tenfoot-ktx <folder>` makes an ETC1 `.ktx` beside every `.jpg`, which is what the sample app does with its photographs, and `--report` prints how much quality each one lost. Both need ImageMagick's `magick` command.

@@ -1,0 +1,30 @@
+---
+title: platform
+description: Tizen, webOS, and the browser, behind one interface. tenfoot/platform.
+sidebar:
+  order: 6
+---
+
+`detectPlatform()` picks the right adapter for the TV you are on. `createRenderer` calls it for you if you do not pass one. All three adapters answer the same questions.
+
+| Member | What it is |
+| --- | --- |
+| `name` | `'tizen'`, `'webos'`, or `'browser'` |
+| `confirmExit` | whether the app must ask before `exit()`: true on Samsung, false on LG |
+| `captionPrefs` | the TV's caption settings, or null if the TV has none |
+| `mapKey(e)` | turns a key event into an action: `up down left right select back`, the play/pause keys, the color keys, `info`, `channelUp`, `channelDown` |
+| `exit()` | close the app; in a browser it only logs a message |
+| `speak(text, interrupt)` | read text out loud when the viewer has the voice guide on |
+| `keepAwake(on)` | keep the screensaver off during video; the renderer calls this for you |
+| `online()` | whether the network is up right now; `offline` and `online` events fire when it changes |
+| `link()` | the deep link the app was opened with, if any |
+| `on(event, fn)` | `visible hidden suspend resume lowMemory offline online captions relaunch` |
+| `pointer(canvas, size, fn)` | the remote's pointer, or a mouse, in 1920×1080 coordinates |
+
+## Deep links
+
+LG sends `contentTarget`. Samsung sends `PAYLOAD`. A browser uses the URL query. All three are read into one `LaunchLink` with `screen`, `arg`, and any name a route claimed with `link`. `parseLink(query)` and `linkOf(params)` are the two readers.
+
+## Asking for keys
+
+Samsung only sends arrows, Enter, and Return by default. Your app has to ask for any other key. Asking for a key takes it away from the TV's own use. So the `keys` option on `createRenderer` is the list of keys your app really uses. A video player asks for the play/pause keys and nothing else.

@@ -1,0 +1,2230 @@
+{
+  "titles": {
+    "the-perfect-season": {
+      "name": "The Perfect Season",
+      "page": {
+        "eyebrow": "ARENA+ ORIGINAL DOCUMENTARY",
+        "year": "2026",
+        "runtime": "1h 52m",
+        "genre": "Documentary",
+        "rating": "PG",
+        "match": "96% match",
+        "badges": [
+          "4K Ultra HD",
+          "5.1 Surround",
+          "Subtitles",
+          "Audio description"
+        ],
+        "synopsis": "Thirty-eight matches, no defeats, one dressing room that nearly tore itself apart. The players and staff tell the story of the season nobody thought possible.",
+        "director": "Ines Faraday",
+        "featuring": "Dele Okonjo, Marta Vieira, Sam Whitfield",
+        "art": "poster-1",
+        "backdrop": "backdrop-1",
+        "moreLike": [
+          {
+            "title": "sprint-season-4",
+            "art": "more-1"
+          },
+          {
+            "title": "the-long-run",
+            "art": "more-2"
+          },
+          {
+            "title": "nine-seconds",
+            "art": "more-3"
+          },
+          {
+            "title": "rivals",
+            "art": "more-4"
+          },
+          {
+            "title": "under-lights",
+            "art": "more-5"
+          }
+        ]
+      }
+    },
+    "inside-the-lines": {
+      "name": "Inside the Lines",
+      "series": {
+        "eyebrow": "ARENA+ ORIGINAL SERIES",
+        "seasons": [
+          "Season 1",
+          "Season 2",
+          "Season 3"
+        ],
+        "meta": [
+          "3 seasons",
+          "2026",
+          "Docuseries"
+        ],
+        "rating": "12",
+        "format": "4K · Dolby Atmos",
+        "synopsis": "Cameras follow four clubs through the promotion race — boardroom, treatment table and tunnel.",
+        "art": "banner-1",
+        "episodes": [
+          {
+            "name": "1. Preseason",
+            "duration": "48m · 18m LEFT",
+            "synopsis": "New signings arrive, a captain is quietly dropped, and the manager sets a target the owners never agreed to.",
+            "art": "episode-1",
+            "progress": 0.38,
+            "badge": "4K"
+          },
+          {
+            "name": "2. The Window",
+            "duration": "44m",
+            "synopsis": "Deadline day: two clubs chase the same striker and a medical goes badly wrong.",
+            "art": "episode-2",
+            "badge": "4K"
+          },
+          {
+            "name": "3. Away Days",
+            "duration": "46m",
+            "synopsis": "Six hundred miles, one coach, and a supporters' club that has seen it all before.",
+            "art": "episode-3",
+            "badge": "4K"
+          },
+          {
+            "name": "4. The Room",
+            "duration": "41m",
+            "synopsis": "Boardroom pressure builds as results slide and a sporting director briefs the press.",
+            "art": "episode-4",
+            "badge": "4K"
+          }
+        ]
+      }
+    },
+    "northgate-vs-rivermoor": {
+      "name": "Northgate vs Rivermoor"
+    },
+    "harborough-vs-ashfield": {
+      "name": "Harborough vs Ashfield"
+    },
+    "grand-prix-qualifying": {
+      "name": "Grand Prix — Qualifying"
+    },
+    "city-classic-marathon": {
+      "name": "City Classic Marathon"
+    },
+    "courtside-semi-final": {
+      "name": "Courtside: Semi-final"
+    },
+    "inside-the-lines-s3": {
+      "name": "Inside the Lines S3"
+    },
+    "matchday-review": {
+      "name": "Matchday Review"
+    },
+    "sprint-season-4": {
+      "name": "Sprint: Season 4"
+    },
+    "set-match": {
+      "name": "Set & Match"
+    },
+    "champions-week": {
+      "name": "Champions Week"
+    },
+    "champions-classics": {
+      "name": "Champions Classics"
+    },
+    "chamber-of-cups": {
+      "name": "Chamber of Cups"
+    },
+    "champion-mindset": {
+      "name": "Champion Mindset"
+    },
+    "chamonix-descent": {
+      "name": "Chamonix Descent"
+    },
+    "chase-the-line": {
+      "name": "Chase the Line"
+    },
+    "championship-weekly": {
+      "name": "Championship Weekly"
+    },
+    "chalk-whistle": {
+      "name": "Chalk & Whistle"
+    },
+    "rivals": {
+      "name": "Rivals"
+    },
+    "under-lights": {
+      "name": "Under Lights"
+    },
+    "nine-points": {
+      "name": "Nine Points"
+    },
+    "away-days": {
+      "name": "Away Days"
+    },
+    "boot-room": {
+      "name": "Boot Room"
+    },
+    "cup-runs": {
+      "name": "Cup Runs"
+    },
+    "the-window": {
+      "name": "The Window"
+    },
+    "terrace": {
+      "name": "Terrace"
+    },
+    "set-piece": {
+      "name": "Set Piece"
+    },
+    "off-the-ball": {
+      "name": "Off the Ball"
+    },
+    "extra-time": {
+      "name": "Extra Time"
+    },
+    "cup-final": {
+      "name": "Cup Final"
+    },
+    "grand-prix-race": {
+      "name": "Grand Prix — Race"
+    },
+    "open-tennis-final": {
+      "name": "Open Tennis: Final"
+    },
+    "draft-night": {
+      "name": "Draft Night"
+    },
+    "nine-seconds": {
+      "name": "Nine Seconds"
+    },
+    "the-long-run": {
+      "name": "The Long Run"
+    },
+    "photo-finish": {
+      "name": "Photo Finish"
+    },
+    "domestique": {
+      "name": "Domestique"
+    },
+    "third-round": {
+      "name": "Third Round"
+    },
+    "wheel-to-wheel": {
+      "name": "Wheel to Wheel"
+    },
+    "the-baseline": {
+      "name": "The Baseline"
+    },
+    "hardwood": {
+      "name": "Hardwood"
+    },
+    "the-mud-final": {
+      "name": "The Mud Final"
+    },
+    "monsoon-grand-prix": {
+      "name": "Monsoon Grand Prix"
+    },
+    "five-sets": {
+      "name": "Five Sets"
+    },
+    "the-fog-match": {
+      "name": "The Fog Match"
+    },
+    "the-replay": {
+      "name": "The Replay"
+    },
+    "the-last-lap": {
+      "name": "The Last Lap"
+    },
+    "salt-flats": {
+      "name": "Salt Flats"
+    },
+    "the-eighth-lane": {
+      "name": "The Eighth Lane"
+    },
+    "cold-water": {
+      "name": "Cold Water"
+    }
+  },
+  "images": {
+    "backdrop-1": {
+      "src": "art/backdrop-1.jpg",
+      "slot": "backdrop",
+      "credit": {
+        "by": "AddedUpdatePoster",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Champasak_Stadium_during_at_night_22Jan2026.jpg"
+      }
+    },
+    "banner-1": {
+      "src": "art/banner-1.jpg",
+      "slot": "banner",
+      "credit": {
+        "by": "Pommes104 at English Wikipedia ( Original text: Bernd Jatzwauk Pommes104 )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Hampden_Panorama.png"
+      }
+    },
+    "hero-1": {
+      "src": "art/hero-1.jpg",
+      "slot": "hero",
+      "credit": {
+        "by": "Krzysztof Popławski",
+        "licence": "CC BY 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mecz_pi%C5%82karski_Wis%C5%82a_Krak%C3%B3w_-_Zag%C5%82%C4%99bie_Sosnwoiec,_28_pa%C5%BAdziernika_2022,_Po%C5%BCegnanie_Stadionu_Ludowego,_KP.jpg"
+      }
+    },
+    "preview-1": {
+      "src": "art/preview-1.jpg",
+      "slot": "preview",
+      "credit": {
+        "by": "Seruinda",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pre-season_friendly_football_match_between_Sky_sports_verse_Kataka_FC_played_in_Mbale_stadium.jpg"
+      }
+    },
+    "remind-1": {
+      "src": "art/remind-1.jpg",
+      "slot": "remind",
+      "credit": {
+        "by": "Smabs Sputzer from Stockport, UK",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:European_Cup_Winners_Cup_(8024436274).jpg"
+      }
+    },
+    "remind-2": {
+      "src": "art/remind-2.jpg",
+      "slot": "remind",
+      "credit": {
+        "by": "user:AngMoKio",
+        "licence": "CC BY-SA 2.5",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Formel3_racing_car_2_amk.jpg"
+      }
+    },
+    "remind-3": {
+      "src": "art/remind-3.jpg",
+      "slot": "remind",
+      "credit": {
+        "by": "Madeleine Ball",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Murray%27s_serve_V_Nadal.jpg"
+      }
+    },
+    "remind-4": {
+      "src": "art/remind-4.jpg",
+      "slot": "remind",
+      "credit": {
+        "by": "Howard the Duck",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2019_NCAA_Men%27s_Basketball_Finals_Game_3_crowd.jpg"
+      }
+    },
+    "poster-1": {
+      "src": "art/poster-1.jpg",
+      "slot": "poster",
+      "credit": {
+        "by": "Hayden Schiff from Cincinnati, USA",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CINvCLE_2017-05-17_-_Garrett_Halfhill_(34751512236)_(cropped).jpg"
+      }
+    },
+    "live-1": {
+      "src": "art/live-1.jpg",
+      "slot": "live",
+      "credit": {
+        "by": "mlsz.hu – the official website of the Hungarian Football Federation",
+        "licence": "Attribution",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Attila_Szalai_in_action_for_Hungary_in_the_international_match_(October_2020).jpg"
+      }
+    },
+    "live-2": {
+      "src": "art/live-2.jpg",
+      "slot": "live",
+      "credit": {
+        "by": "senolsengul at Pixabay",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Gomis_and_Neust%C3%A4dter_in_a_header_duel_(October_2017).jpg"
+      }
+    },
+    "live-3": {
+      "src": "art/live-3.jpg",
+      "slot": "live",
+      "credit": {
+        "by": "Steffen Prößdorf",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2023-04-23_Motorsport,_ABB_FIA_Formula_E_World_Championship,_Berlin_E-Prix_2023_1DX_1445_by_Stepro.jpg"
+      }
+    },
+    "live-4": {
+      "src": "art/live-4.jpg",
+      "slot": "live",
+      "credit": {
+        "by": "Stephen Craven",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Marathon_runners_near_the_end_of_the_race_-_geograph.org.uk_-_6142899.jpg"
+      }
+    },
+    "live-5": {
+      "src": "art/live-5.jpg",
+      "slot": "live",
+      "credit": {
+        "by": "Sandro Halank, Wikimedia Commons",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2023-08-09_Deutschland_gegen_Kanada_(Basketball-L%C3%A4nderspiel)_by_Sandro_Halank%E2%80%93118.jpg"
+      }
+    },
+    "cont-1": {
+      "src": "art/cont-1.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Denieuwetoekomst95",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dylan_Nieuwenhuijs_training_January_2015.JPG"
+      }
+    },
+    "cont-2": {
+      "src": "art/cont-2.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Илья Хохлов",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Spain_national_football_team_Euro_2012_trophy_02.jpg"
+      }
+    },
+    "cont-3": {
+      "src": "art/cont-3.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "PattayaPatrol",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:DZ6_2354_Empty_bleachers_and_a_covered_grandstand_overlook_a_quiet_artificial-turf_sports_field_at_dusk.jpg"
+      }
+    },
+    "cont-4": {
+      "src": "art/cont-4.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Declan M Martin",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Aston_Martin_pit_USGP_2021.jpg"
+      }
+    },
+    "cont-5": {
+      "src": "art/cont-5.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "IvanAndreevich",
+        "licence": "CC BY 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ernests_Gulbis_Serve_01.jpg"
+      }
+    },
+    "grid-1": {
+      "src": "art/grid-1.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Colin Smith",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Wembley_Stadium_-_Cup_Winners_-_geograph.org.uk_-_7426798.jpg"
+      }
+    },
+    "grid-2": {
+      "src": "art/grid-2.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Rosso Robot",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2014-06-07-Football-EC_final-Fan-crowd.JPG"
+      }
+    },
+    "grid-3": {
+      "src": "art/grid-3.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Hullian111",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tour_of_Sewell_Group_Craven_Park_NE_Floodlight_Detail.jpg"
+      }
+    },
+    "grid-4": {
+      "src": "art/grid-4.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Oliver Dixon",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Football_pitch_at_Craster_-_geograph.org.uk_-_1188742.jpg"
+      }
+    },
+    "grid-5": {
+      "src": "art/grid-5.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Werner100359",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Supporters_FC_Red_Bull_Salzburg_Away_22.JPG"
+      }
+    },
+    "grid-6": {
+      "src": "art/grid-6.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Дмитрий Кошелев",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Boots_of_Filippo_Inzaghi.jpg"
+      }
+    },
+    "grid-7": {
+      "src": "art/grid-7.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Michael Cairns",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:1999_FA_Cup_Final_trophy_presentation_(cropped).jpg"
+      }
+    },
+    "grid-8": {
+      "src": "art/grid-8.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Julia Sumangil",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:La_Bombonera_football_stadium.jpg"
+      }
+    },
+    "grid-9": {
+      "src": "art/grid-9.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Nigel Cox",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Wycombe_Wanderers_FC,_Adams_Park_Woodlands_Stand_-_geograph.org.uk_-_1572514.jpg"
+      }
+    },
+    "grid-10": {
+      "src": "art/grid-10.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Bjørn Erik Pedersen",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Wall_on_direct_free_kick,_Sogndal-Rosenborg_07-15-2017.jpg"
+      }
+    },
+    "grid-11": {
+      "src": "art/grid-11.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Robert Gale",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Linesman_(soccer).jpg"
+      }
+    },
+    "grid-12": {
+      "src": "art/grid-12.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Mxn",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Scoreboard_at_San_Francisco_Bay_Area_Stadium.jpg"
+      }
+    },
+    "result-1": {
+      "src": "art/result-1.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Liondartois",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:PSG_champion_de_France_2014-2015.JPG"
+      }
+    },
+    "result-2": {
+      "src": "art/result-2.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Snyder, Frank R. Flickr: Miami U. Libraries - Digital Collections",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Soccer_team_match_action_shot_1921_(3191675058).jpg"
+      }
+    },
+    "result-3": {
+      "src": "art/result-3.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Thomas Nugent",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Celtic_FC_trophy_cabinet_(geograph_7734823).jpg"
+      }
+    },
+    "result-4": {
+      "src": "art/result-4.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Nenad Stojkovic",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Young_attractive_man_athlete_doing_exercise_with_the_barbell_in_the_gym.jpg"
+      }
+    },
+    "result-5": {
+      "src": "art/result-5.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Ximonic , Simo Räsänen",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Chamonix_valley_from_la_Fl%C3%A9g%C3%A8re,2010_07.JPG"
+      }
+    },
+    "result-6": {
+      "src": "art/result-6.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Fukumoto",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Japan_Cup_Cycle_Road_Race_2019_PA200848.jpg"
+      }
+    },
+    "result-7": {
+      "src": "art/result-7.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Dave Price",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Kassam_Stadium,_Oxford_-_geograph.org.uk_-_3469436.jpg"
+      }
+    },
+    "result-8": {
+      "src": "art/result-8.jpg",
+      "slot": "result",
+      "credit": {
+        "by": "Roofflat",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Visar_Kastrati_-_Referee.jpg"
+      }
+    },
+    "saved-1": {
+      "src": "art/saved-1.jpg",
+      "slot": "saved",
+      "credit": {
+        "by": "Jon Bryant",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Crystal_Palace_players_celebrate_a_goal_-_geograph.org.uk_-_138708.jpg"
+      }
+    },
+    "saved-2": {
+      "src": "art/saved-2.jpg",
+      "slot": "saved",
+      "credit": {
+        "by": "Paul Gillett",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Players_Tunnel_-_Wembley_-_geograph.org.uk_-_4624479.jpg"
+      }
+    },
+    "saved-3": {
+      "src": "art/saved-3.jpg",
+      "slot": "saved",
+      "credit": {
+        "by": "LexSprinter",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Start_blocks.JPG"
+      }
+    },
+    "saved-4": {
+      "src": "art/saved-4.jpg",
+      "slot": "saved",
+      "credit": {
+        "by": "Magharebia",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Supporters_de_la_s%C3%A9lection_algerienne,_Coups_du_monde_2014,_Brazil.jpg"
+      }
+    },
+    "saved-5": {
+      "src": "art/saved-5.jpg",
+      "slot": "saved",
+      "credit": {
+        "by": "Ricardo from Sao Paulo, Brazil",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Chemutai_Rionotukei.jpg"
+      }
+    },
+    "saved-6": {
+      "src": "art/saved-6.jpg",
+      "slot": "saved",
+      "credit": {
+        "by": "Martin Addison",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Football_Under_Floodlights_-_geograph.org.uk_-_619765.jpg"
+      }
+    },
+    "saved-7": {
+      "src": "art/saved-7.jpg",
+      "slot": "saved",
+      "credit": {
+        "by": "Diliff",
+        "licence": "CC BY 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lourdes_Dom%C3%ADnguez_Lino_2,_2015_Wimbledon_Qualifying_-_Diliff.jpg"
+      }
+    },
+    "episode-1": {
+      "src": "art/episode-1.jpg",
+      "slot": "episode",
+      "credit": {
+        "by": "Something Original ( talk )",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Zach_Pfeffer_at_Preseason_Training_for_the_Philadelphia_Union,_Jan_2011.jpg"
+      }
+    },
+    "episode-2": {
+      "src": "art/episode-2.jpg",
+      "slot": "episode",
+      "credit": {
+        "by": "Tsutomu Takasu",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_tpower1978_-_Training_session.jpg"
+      }
+    },
+    "episode-3": {
+      "src": "art/episode-3.jpg",
+      "slot": "episode",
+      "credit": {
+        "by": "Terry Robinson",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Blackpool_supporters_coach_at_Wembley_Stadium_-_geograph.org.uk_-_2963540.jpg"
+      }
+    },
+    "episode-4": {
+      "src": "art/episode-4.jpg",
+      "slot": "episode",
+      "credit": {
+        "by": "Богдан Заяц",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:V%C3%ADtor_Pereira_at_press_conference_(cropped).jpg"
+      }
+    },
+    "profile-1": {
+      "src": "art/profile-1.jpg",
+      "slot": "profile",
+      "credit": {
+        "by": "Peter Glaser baraida",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Adidas_soccer_ball_on_a_grass_pitch_(Unsplash).jpg"
+      }
+    },
+    "profile-2": {
+      "src": "art/profile-2.jpg",
+      "slot": "profile",
+      "credit": {
+        "by": "KeepActive Australia from Melbourne, VIC, Australia",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tennis_Racquets_and_Balls_on_a_Clay_Court.jpg"
+      }
+    },
+    "profile-3": {
+      "src": "art/profile-3.jpg",
+      "slot": "profile",
+      "credit": {
+        "by": "Ildar Sagdejev ( Specious )",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2011-06-07_Basketball_in_hoop_still_shot.jpg"
+      }
+    },
+    "profile-4": {
+      "src": "art/profile-4.jpg",
+      "slot": "profile",
+      "credit": {
+        "by": "DS Pugh",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Athletics_track_-_geograph.org.uk_-_4704803.jpg"
+      }
+    },
+    "more-1": {
+      "src": "art/more-1.jpg",
+      "slot": "more",
+      "credit": {
+        "by": "Lukas Raich",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F3_Austria_2021_Nr._25_Edgar_(corner).jpg"
+      }
+    },
+    "more-2": {
+      "src": "art/more-2.jpg",
+      "slot": "more",
+      "credit": {
+        "by": "U.S. Air Force photo by Senior Airman Samantha White",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Team_Yokota_welcomes_runners_for_45th_Annual_Frostbite_Road_Race_(9485738).jpg"
+      }
+    },
+    "more-3": {
+      "src": "art/more-3.jpg",
+      "slot": "more",
+      "credit": {
+        "by": "Gabriela Liana S. Barela for the Philippine Information Agency (PIA 3)",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:New_Clark_City_Stadium.jpg"
+      }
+    },
+    "more-4": {
+      "src": "art/more-4.jpg",
+      "slot": "more",
+      "credit": {
+        "by": "AGilhooley",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:City_of_Manchester_Stadium_Crowd_Against_Hull.jpg"
+      }
+    },
+    "more-5": {
+      "src": "art/more-5.jpg",
+      "slot": "more",
+      "credit": {
+        "by": "John Lucas",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Floodlights_of_Aberystwyth_Town_F.C._-_geograph.org.uk_-_5155582.jpg"
+      }
+    },
+    "channel-1": {
+      "src": "art/channel-1.svg",
+      "slot": "channel",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "channel-2": {
+      "src": "art/channel-2.svg",
+      "slot": "channel",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "channel-3": {
+      "src": "art/channel-3.svg",
+      "slot": "channel",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "channel-4": {
+      "src": "art/channel-4.svg",
+      "slot": "channel",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "channel-5": {
+      "src": "art/channel-5.svg",
+      "slot": "channel",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "logo-1": {
+      "src": "art/logo-1.svg",
+      "slot": "logo",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "logo-2": {
+      "src": "art/logo-2.svg",
+      "slot": "logo",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "logo-3": {
+      "src": "art/logo-3.svg",
+      "slot": "logo",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "logo-4": {
+      "src": "art/logo-4.svg",
+      "slot": "logo",
+      "credit": {
+        "by": "tools/arena-art.mjs",
+        "licence": "MIT",
+        "licenceUrl": "",
+        "source": ""
+      }
+    },
+    "cont-6": {
+      "src": "art/cont-6.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Steve Daniels",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Managers%27_dugouts_at_the_ASM_Stadium_-_geograph.org.uk_-_2237370.jpg"
+      }
+    },
+    "cont-7": {
+      "src": "art/cont-7.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Richard Humphrey",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_away_supporters_end_-_Stadium_MK_-_geograph.org.uk_-_3887405.jpg"
+      }
+    },
+    "cont-8": {
+      "src": "art/cont-8.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Trevor Rickard",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kington_Town_Football_Club_-_geograph.org.uk_-_1728422.jpg"
+      }
+    },
+    "cont-9": {
+      "src": "art/cont-9.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "23dww01",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Soccer_Player_Taking_Corner_Kick.jpg"
+      }
+    },
+    "cont-10": {
+      "src": "art/cont-10.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Gareth Williams from Redhill, England",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Crowd_Are_On_The_Pitch_-_Brentford_-_The_Play-Offs_-_May_2013_-_We_Thought_It_Was_All_Over,_It_Was_We_Lost_The_Final_(8727834947).jpg"
+      }
+    },
+    "cont-11": {
+      "src": "art/cont-11.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Giggi12",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Penalty_save_on_the_match_of_UEFA_league.jpg"
+      }
+    },
+    "cont-12": {
+      "src": "art/cont-12.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Sport the library",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:141100_-_Athletics_track_finish_line_from_above_-_3b_-_2000_Sydney_race_photo.jpg"
+      }
+    },
+    "cont-13": {
+      "src": "art/cont-13.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Albinfo",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2024_UCI_Road_World_Championships_Zurich_Men_Elite_Road_Race_E_67.jpg"
+      }
+    },
+    "cont-14": {
+      "src": "art/cont-14.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Ian Calderwood",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Snow-covered_football_pitch_-_geograph.org.uk_-_5624191.jpg"
+      }
+    },
+    "cont-15": {
+      "src": "art/cont-15.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Morio",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Robert_Huff_overtaking_Andy_Priaulx_2010_WTCC_Race_of_Japan_(Race_1).jpg"
+      }
+    },
+    "cont-16": {
+      "src": "art/cont-16.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Spiralz",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tim_Henman_Wimbledon_2005_1.jpg"
+      }
+    },
+    "cont-17": {
+      "src": "art/cont-17.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Lorie Shaull",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Minnesota_Lynx_teammates_huddle_on_the_court_in_the_Lynx_vs_Sun_game_at_Target_Center.jpg"
+      }
+    },
+    "cont-18": {
+      "src": "art/cont-18.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Unknown author Unknown author",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Sanisidro_football_match_1908.jpg"
+      }
+    },
+    "cont-19": {
+      "src": "art/cont-19.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Gillfoto",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:1976_British_Grand_Prix_Hans_Stuck.jpg"
+      }
+    },
+    "cont-20": {
+      "src": "art/cont-20.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Archives New Zealand from New Zealand",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Chris_Lewis,_New_Zealand_Tennis_Player_(February_1980)_(24874283479).jpg"
+      }
+    },
+    "cont-21": {
+      "src": "art/cont-21.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Enrique Boeri",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Renato_cesarini_v_racing_nacional_1983.jpg"
+      }
+    },
+    "cont-22": {
+      "src": "art/cont-22.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Unknown author Unknown author",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Gr%C3%AAmio_FBPA_x_River_Plate_-_Supercopa_1988.jpg"
+      }
+    },
+    "cont-23": {
+      "src": "art/cont-23.jpg",
+      "slot": "cont",
+      "credit": {
+        "by": "Anonymous Unknown author",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Biegacz_Syreny_Warszawa_J%C3%B3zef_Noji_na_zawodach_w_1938.jpg"
+      }
+    },
+    "grid-13": {
+      "src": "art/grid-13.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Martin Addison",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Football_Under_Floodlights_-_geograph.org.uk_-_619765.jpg"
+      }
+    },
+    "grid-14": {
+      "src": "art/grid-14.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Sport the library",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:211000_-_Athletics_track_100m_semi_Don_Elgin_action_-_3b_-_2000_Sydney_race_photo.jpg"
+      }
+    },
+    "grid-15": {
+      "src": "art/grid-15.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Roger Wollstadt",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Berlin_-_Olympic_Stadium_in_Snowstorm.jpg"
+      }
+    },
+    "grid-16": {
+      "src": "art/grid-16.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "J Taylor",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Centaurs_RFC_stadium_-_seats_looking_southwards_towards_the_Gillette_clock_tower_-_geograph.org.uk_-_1059186.jpg"
+      }
+    },
+    "grid-17": {
+      "src": "art/grid-17.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Thomas Nugent",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Celtic_FC_trophy_cabinet_(geograph_7734823)_(one_club_man).jpg"
+      }
+    },
+    "grid-18": {
+      "src": "art/grid-18.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Yaffa",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Darren_Drysdale.jpg"
+      }
+    },
+    "grid-19": {
+      "src": "art/grid-19.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Verena_Stuffer_alpine_downhill_racer.jpg"
+      }
+    },
+    "grid-20": {
+      "src": "art/grid-20.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Fukumoto",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Japan_Cup_Cycle_Road_Race_2024_PA200529.jpg"
+      }
+    },
+    "grid-21": {
+      "src": "art/grid-21.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Unknown author Unknown author",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Rusty_Clark_jump_shot_1969.jpeg"
+      }
+    },
+    "grid-22": {
+      "src": "art/grid-22.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "BLMUtah",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Motorcycle_Racing_on_Bonneville_Salt_Flats_(53109478064).jpg"
+      }
+    },
+    "grid-23": {
+      "src": "art/grid-23.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Steven Pisano",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Track_and_Field_-_2015_Armory_Invitational_runner.jpg"
+      }
+    },
+    "grid-24": {
+      "src": "art/grid-24.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Matthew Chadwick",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Open_Water_Swimmers_-_geograph.org.uk_-_4267212.jpg"
+      }
+    },
+    "grid-25": {
+      "src": "art/grid-25.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Timmy96",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Burton_Albion_Players_Training_03052025_(12).jpg"
+      }
+    },
+    "grid-26": {
+      "src": "art/grid-26.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Hans van Dijk for Anefo",
+        "licence": "CC0",
+        "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:PSV_tegen_Feyenoord_1-2._Wijnstekers_in_duel_met_Thoresen_van_PSV,_Bestanddeelnr_932-0386.jpg"
+      }
+    },
+    "grid-27": {
+      "src": "art/grid-27.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Jonathan Schilling",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:World_Cup_1994_-_Bulgaria_v_Germany_-_banners_from_stands.jpg"
+      }
+    },
+    "grid-28": {
+      "src": "art/grid-28.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Unknown author Unknown author",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:Independiente_copa_intercontinental.jpg"
+      }
+    },
+    "grid-29": {
+      "src": "art/grid-29.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Dominic Nelson",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sandbach_United_F.C._-_pitch_and_corner_flag_-_Jul_2025.jpg"
+      }
+    },
+    "grid-30": {
+      "src": "art/grid-30.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Barry Shimmon",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Doubles_match_on_outside_court_at_Wimbledon_1988_-_geograph.org.uk_-_2473163.jpg"
+      }
+    },
+    "grid-31": {
+      "src": "art/grid-31.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Lionel Allorge",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Journ%C3%A9e_portes_ouvertes_au_v%C3%A9lodrome_de_Saint-Quentin-en-Yvelines_le_1er_f%C3%A9vrier_2014_-_04.jpg"
+      }
+    },
+    "grid-32": {
+      "src": "art/grid-32.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Riley, Sidney",
+        "licence": "Public domain",
+        "licenceUrl": "",
+        "source": "https://commons.wikimedia.org/wiki/File:StateLibQld_1_291883_Windsor_Australian_Rules_Football_Club_team_photograph,_1930.jpg"
+      }
+    },
+    "grid-33": {
+      "src": "art/grid-33.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Morio",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pit_lane_2014_Singapore_GP.jpg"
+      }
+    },
+    "grid-34": {
+      "src": "art/grid-34.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Tanis Coralee Leonhardi",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lillie_Nordmann,_2023_Pac-12_Championships,_200_yard_freestyle_preliminaries_post-race_-_24_February_2023.jpg"
+      }
+    },
+    "grid-35": {
+      "src": "art/grid-35.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Paul Butler",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Burnham_Football_Club_2021.jpg"
+      }
+    },
+    "grid-36": {
+      "src": "art/grid-36.jpg",
+      "slot": "grid",
+      "credit": {
+        "by": "Tokumeigakarinoaoshima",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Starting_grid_at_SUZUKA_1000km_THE_FINAL_(12).jpg"
+      }
+    }
+  },
+  "nav": [
+    "Home",
+    "Search",
+    "Live",
+    "Sports",
+    "Films",
+    "Series",
+    "My List",
+    "Settings"
+  ],
+  "profiles": [
+    {
+      "name": "Marcus",
+      "art": "profile-1",
+      "full": "Marcus Adeyemi",
+      "signedIn": true
+    },
+    {
+      "name": "Ada",
+      "art": "profile-2"
+    },
+    {
+      "name": "Theo",
+      "art": "profile-3"
+    },
+    {
+      "name": "Kids",
+      "art": "profile-4"
+    }
+  ],
+  "home": {
+    "hero": {
+      "kicker": "Matchday 6 · Kickoff 20:00",
+      "title": "Northgate FC\nvs Rivermoor",
+      "badges": [
+        "4K",
+        "Dolby Vision",
+        "Dolby Atmos",
+        "60fps",
+        "Multicam"
+      ],
+      "synopsis": "Top of the table, and Northgate have not dropped a point at home all season. Pre-match from 19:30.",
+      "art": "hero-1"
+    },
+    "live": [
+      {
+        "title": "northgate-vs-rivermoor",
+        "meta": "2nd half · 68'",
+        "art": "live-1",
+        "tag": "4K · Dolby Atmos",
+        "progress": 0.74,
+        "live": true,
+        "blocked": "Blacked out in your area"
+      },
+      {
+        "title": "harborough-vs-ashfield",
+        "meta": "Kickoff 20:45",
+        "art": "live-2",
+        "tag": "Up next · 4K"
+      },
+      {
+        "title": "grand-prix-qualifying",
+        "meta": "Sunday 14:00",
+        "art": "live-3",
+        "tag": "Reminder"
+      },
+      {
+        "title": "city-classic-marathon",
+        "meta": "Tomorrow 08:30",
+        "art": "live-4",
+        "tag": "4K"
+      },
+      {
+        "title": "courtside-semi-final",
+        "meta": "Live in 2h",
+        "art": "live-5",
+        "tag": "Multicam"
+      }
+    ],
+    "continue": [
+      {
+        "title": "inside-the-lines-s3",
+        "meta": "E1 · 18m left",
+        "art": "cont-1",
+        "progress": 0.44
+      },
+      {
+        "title": "the-perfect-season",
+        "meta": "42m left",
+        "art": "cont-2",
+        "progress": 0.62
+      },
+      {
+        "title": "matchday-review",
+        "meta": "Ep 22 · 9m left",
+        "art": "cont-3",
+        "progress": 0.81
+      },
+      {
+        "title": "sprint-season-4",
+        "meta": "E7 · 31m left",
+        "art": "cont-4",
+        "progress": 0.33
+      },
+      {
+        "title": "set-match",
+        "meta": "E3 · 24m left",
+        "art": "cont-5",
+        "progress": 0.55
+      }
+    ],
+    "recommended": [
+      {
+        "heading": "Because you're watching Inside the Lines",
+        "cards": [
+          {
+            "title": "boot-room",
+            "meta": "Doc · 58m",
+            "art": "cont-6",
+            "blocked": "Blacked out in your area"
+          },
+          {
+            "title": "away-days",
+            "meta": "Series · S1",
+            "art": "cont-7"
+          },
+          {
+            "title": "cup-runs",
+            "meta": "Series · S4",
+            "art": "cont-8"
+          },
+          {
+            "title": "nine-points",
+            "meta": "Doc · 1h 34m",
+            "art": "cont-9"
+          },
+          {
+            "title": "terrace",
+            "meta": "Doc · 1h 12m",
+            "art": "cont-10"
+          },
+          {
+            "title": "set-piece",
+            "meta": "Series · S3",
+            "art": "cont-11"
+          }
+        ]
+      },
+      {
+        "heading": "New this week",
+        "cards": [
+          {
+            "title": "photo-finish",
+            "meta": "Doc · 1h 06m",
+            "art": "cont-12",
+            "tag": "NEW"
+          },
+          {
+            "title": "domestique",
+            "meta": "Film · 2026",
+            "art": "cont-13",
+            "tag": "NEW"
+          },
+          {
+            "title": "third-round",
+            "meta": "Series · S1",
+            "art": "cont-14",
+            "tag": "NEW"
+          },
+          {
+            "title": "wheel-to-wheel",
+            "meta": "Docuseries · S1",
+            "art": "cont-15",
+            "tag": "NEW"
+          },
+          {
+            "title": "the-baseline",
+            "meta": "Doc · 47m",
+            "art": "cont-16",
+            "tag": "NEW"
+          },
+          {
+            "title": "hardwood",
+            "meta": "Film · 2026",
+            "art": "cont-17",
+            "tag": "NEW"
+          }
+        ]
+      },
+      {
+        "heading": "From the archive",
+        "cards": [
+          {
+            "title": "the-replay",
+            "meta": "Semi-final · 1988",
+            "art": "cont-22"
+          },
+          {
+            "title": "the-fog-match",
+            "meta": "Match · 1983",
+            "art": "cont-21"
+          },
+          {
+            "title": "five-sets",
+            "meta": "Final · 1980",
+            "art": "cont-20"
+          },
+          {
+            "title": "monsoon-grand-prix",
+            "meta": "Race · 1976",
+            "art": "cont-19"
+          },
+          {
+            "title": "the-last-lap",
+            "meta": "Race · 1938",
+            "art": "cont-23"
+          },
+          {
+            "title": "the-mud-final",
+            "meta": "Final · 1908",
+            "art": "cont-18"
+          }
+        ]
+      }
+    ]
+  },
+  "live": {
+    "filters": [
+      "All sports",
+      "Football",
+      "Basketball",
+      "Motorsport",
+      "Tennis"
+    ],
+    "onAir": {
+      "channel": "CH 401 · ARENA SPORT 1",
+      "name": "Northgate FC vs Rivermoor",
+      "slot": "19:30 – 21:45 · 2nd half, 68'",
+      "meta": "Matchday 6 · Second half",
+      "home": {
+        "code": "NGF",
+        "score": 2
+      },
+      "away": {
+        "code": "RVM",
+        "score": 1
+      },
+      "minute": "68'",
+      "art": "preview-1"
+    },
+    "channels": [
+      {
+        "channel": "CH 402 · ARENA SPORT 2",
+        "show": "Courtside: Semi-final",
+        "badge": "4K",
+        "art": "channel-1"
+      },
+      {
+        "channel": "CH 403 · ARENA MOTOR",
+        "show": "Grand Prix — Practice 3",
+        "badge": "HDR",
+        "art": "channel-2"
+      },
+      {
+        "channel": "CH 404 · ARENA COURT",
+        "show": "Open Tennis: Round 3",
+        "badge": "HD",
+        "art": "channel-3"
+      },
+      {
+        "channel": "CH 410 · ARENA NEWS",
+        "show": "Transfer Desk",
+        "badge": "HD",
+        "art": "channel-4"
+      },
+      {
+        "channel": "CH 411 · ARENA CLASSICS",
+        "show": "1998 Cup Final",
+        "badge": "SD",
+        "art": "channel-5"
+      }
+    ],
+    "guide": [
+      {
+        "channel": "ARENA SPORT 1",
+        "art": "logo-1",
+        "programmes": [
+          {
+            "name": "Northgate vs Rivermoor",
+            "time": "19:30–21:45",
+            "width": 2.2
+          },
+          {
+            "name": "Post-match analysis",
+            "time": "21:45–22:30",
+            "width": 1
+          },
+          {
+            "name": "Matchday Review",
+            "time": "22:30–23:30",
+            "width": 1.2
+          }
+        ]
+      },
+      {
+        "channel": "ARENA SPORT 2",
+        "art": "logo-2",
+        "programmes": [
+          {
+            "name": "Courtside: Semi-final",
+            "time": "19:00–21:00",
+            "width": 1.4
+          },
+          {
+            "name": "Hoops Tonight",
+            "time": "21:00–22:00",
+            "width": 1.1
+          },
+          {
+            "name": "Draft Special",
+            "time": "22:00–23:30",
+            "width": 1.6
+          }
+        ]
+      },
+      {
+        "channel": "ARENA MOTOR",
+        "art": "logo-3",
+        "programmes": [
+          {
+            "name": "Grand Prix — Practice 3",
+            "time": "19:15–21:15",
+            "width": 1.7
+          },
+          {
+            "name": "Paddock Pass",
+            "time": "21:15–22:15",
+            "width": 1.1
+          },
+          {
+            "name": "Sprint: Season 4 E7",
+            "time": "22:15–23:15",
+            "width": 1.3
+          }
+        ]
+      },
+      {
+        "channel": "ARENA COURT",
+        "art": "logo-4",
+        "programmes": [
+          {
+            "name": "Open Tennis: Round 3",
+            "time": "18:00–21:30",
+            "width": 2.6
+          },
+          {
+            "name": "Deuce",
+            "time": "21:30–22:30",
+            "width": 1
+          },
+          {
+            "name": "Classic Finals",
+            "time": "22:30–00:00",
+            "width": 1.4
+          }
+        ]
+      }
+    ],
+    "hours": [
+      "20:00",
+      "20:30",
+      "21:00",
+      "21:30"
+    ]
+  },
+  "detail": "the-perfect-season",
+  "episodes": "inside-the-lines",
+  "player": {
+    "buttons": [
+      "Multicam",
+      "Stats",
+      "Subtitles",
+      "Audio",
+      "Related"
+    ],
+    "audio": [
+      "English · Dolby Atmos",
+      "Stadium mix · 5.1",
+      "Español · 5.1"
+    ],
+    "subtitles": [
+      "Off",
+      "English CC"
+    ]
+  },
+  "search": {
+    "query": "cham",
+    "keys": [
+      [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      [
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ],
+      [
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U"
+      ],
+      [
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "1",
+        "2"
+      ]
+    ],
+    "results": [
+      {
+        "title": "champions-week",
+        "meta": "Live · Tonight 20:00",
+        "art": "result-1",
+        "tag": "4K",
+        "blocked": "Rights expired"
+      },
+      {
+        "title": "champions-classics",
+        "meta": "Series · 3 seasons",
+        "art": "result-2"
+      },
+      {
+        "title": "chamber-of-cups",
+        "meta": "Film · 2024",
+        "art": "result-3"
+      },
+      {
+        "title": "champion-mindset",
+        "meta": "Docuseries",
+        "art": "result-4"
+      },
+      {
+        "title": "chamonix-descent",
+        "meta": "Film · 2025",
+        "art": "result-5"
+      },
+      {
+        "title": "chase-the-line",
+        "meta": "Series · 2 seasons",
+        "art": "result-6"
+      },
+      {
+        "title": "championship-weekly",
+        "meta": "Show · Weekly",
+        "art": "result-7"
+      },
+      {
+        "title": "chalk-whistle",
+        "meta": "Film · 2023",
+        "art": "result-8"
+      }
+    ]
+  },
+  "sections": {
+    "sports": {
+      "nav": "Sports",
+      "breadcrumb": "SPORTS › FOOTBALL",
+      "name": "Football",
+      "count": "248 TITLES",
+      "filters": [
+        "All",
+        "Live",
+        "Leagues",
+        "Documentaries",
+        "Classic matches",
+        "Highlights",
+        "Youth"
+      ],
+      "grid": [
+        {
+          "title": "the-perfect-season",
+          "meta": "Doc · 1h 52m",
+          "art": "grid-1",
+          "tag": "4K",
+          "blocked": "Blacked out in your area"
+        },
+        {
+          "title": "rivals",
+          "meta": "Series · S2",
+          "art": "grid-2",
+          "tag": "HDR",
+          "blocked": "Blacked out in your area"
+        },
+        {
+          "title": "under-lights",
+          "meta": "Film · 2025",
+          "art": "grid-3",
+          "tag": "HD"
+        },
+        {
+          "title": "nine-points",
+          "meta": "Doc · 1h 34m",
+          "art": "grid-4",
+          "tag": "4K"
+        },
+        {
+          "title": "away-days",
+          "meta": "Series · S1",
+          "art": "grid-5",
+          "tag": "HDR"
+        },
+        {
+          "title": "boot-room",
+          "meta": "Doc · 58m",
+          "art": "grid-6",
+          "tag": "HD"
+        },
+        {
+          "title": "cup-runs",
+          "meta": "Series · S4",
+          "art": "grid-7",
+          "tag": "4K"
+        },
+        {
+          "title": "the-window",
+          "meta": "Film · 2026",
+          "art": "grid-8",
+          "tag": "HDR"
+        },
+        {
+          "title": "terrace",
+          "meta": "Doc · 1h 12m",
+          "art": "grid-9",
+          "tag": "HD"
+        },
+        {
+          "title": "set-piece",
+          "meta": "Series · S3",
+          "art": "grid-10",
+          "tag": "4K"
+        },
+        {
+          "title": "off-the-ball",
+          "meta": "Show · Weekly",
+          "art": "grid-11",
+          "tag": "HDR"
+        },
+        {
+          "title": "extra-time",
+          "meta": "Film · 2024",
+          "art": "grid-12",
+          "tag": "HD"
+        }
+      ]
+    },
+    "films": {
+      "nav": "Films",
+      "breadcrumb": "ARENA+ FILMS",
+      "name": "Films",
+      "count": "94 TITLES",
+      "filters": [
+        "All",
+        "New",
+        "Documentaries",
+        "Features",
+        "Under 90 minutes",
+        "Archive"
+      ],
+      "grid": [
+        {
+          "title": "under-lights",
+          "meta": "Film · 2025",
+          "art": "grid-13",
+          "tag": "HD",
+          "blocked": "Blacked out in your area"
+        },
+        {
+          "title": "nine-seconds",
+          "meta": "Film · 2025",
+          "art": "grid-14",
+          "tag": "HDR",
+          "blocked": "Blacked out in your area"
+        },
+        {
+          "title": "the-window",
+          "meta": "Film · 2026",
+          "art": "grid-15",
+          "tag": "HDR"
+        },
+        {
+          "title": "extra-time",
+          "meta": "Film · 2024",
+          "art": "grid-16",
+          "tag": "HD"
+        },
+        {
+          "title": "chamber-of-cups",
+          "meta": "Film · 2024",
+          "art": "grid-17",
+          "tag": "HD"
+        },
+        {
+          "title": "chalk-whistle",
+          "meta": "Film · 2023",
+          "art": "grid-18",
+          "tag": "HD"
+        },
+        {
+          "title": "chamonix-descent",
+          "meta": "Film · 2025",
+          "art": "grid-19",
+          "tag": "4K"
+        },
+        {
+          "title": "domestique",
+          "meta": "Film · 2026",
+          "art": "grid-20",
+          "tag": "4K"
+        },
+        {
+          "title": "hardwood",
+          "meta": "Film · 2026",
+          "art": "grid-21",
+          "tag": "4K"
+        },
+        {
+          "title": "salt-flats",
+          "meta": "Film · 2022",
+          "art": "grid-22",
+          "tag": "HD"
+        },
+        {
+          "title": "the-eighth-lane",
+          "meta": "Film · 2021",
+          "art": "grid-23",
+          "tag": "HD"
+        },
+        {
+          "title": "cold-water",
+          "meta": "Film · 2023",
+          "art": "grid-24",
+          "tag": "HDR"
+        }
+      ]
+    },
+    "series": {
+      "nav": "Series",
+      "breadcrumb": "ARENA+ SERIES",
+      "name": "Series",
+      "count": "61 TITLES",
+      "filters": [
+        "All",
+        "New episodes",
+        "Documentaries",
+        "Behind the scenes",
+        "Complete seasons",
+        "Archive"
+      ],
+      "grid": [
+        {
+          "title": "inside-the-lines",
+          "meta": "Series · 3 seasons",
+          "art": "grid-25",
+          "tag": "4K",
+          "blocked": "Blacked out in your area"
+        },
+        {
+          "title": "rivals",
+          "meta": "Series · S2",
+          "art": "grid-26",
+          "tag": "HDR",
+          "blocked": "Blacked out in your area"
+        },
+        {
+          "title": "away-days",
+          "meta": "Series · S1",
+          "art": "grid-27",
+          "tag": "HD"
+        },
+        {
+          "title": "cup-runs",
+          "meta": "Series · S4",
+          "art": "grid-28",
+          "tag": "4K"
+        },
+        {
+          "title": "set-piece",
+          "meta": "Series · S3",
+          "art": "grid-29",
+          "tag": "4K"
+        },
+        {
+          "title": "set-match",
+          "meta": "Series · S1",
+          "art": "grid-30",
+          "tag": "HD"
+        },
+        {
+          "title": "chase-the-line",
+          "meta": "Series · 2 seasons",
+          "art": "grid-31",
+          "tag": "HDR"
+        },
+        {
+          "title": "champions-classics",
+          "meta": "Series · 3 seasons",
+          "art": "grid-32",
+          "tag": "HD"
+        },
+        {
+          "title": "sprint-season-4",
+          "meta": "Series · S4",
+          "art": "grid-33",
+          "tag": "4K"
+        },
+        {
+          "title": "champion-mindset",
+          "meta": "Docuseries · S2",
+          "art": "grid-34",
+          "tag": "HDR"
+        },
+        {
+          "title": "third-round",
+          "meta": "Series · S1",
+          "art": "grid-35",
+          "tag": "4K"
+        },
+        {
+          "title": "wheel-to-wheel",
+          "meta": "Docuseries · S1",
+          "art": "grid-36",
+          "tag": "HDR"
+        }
+      ]
+    }
+  },
+  "myList": {
+    "sorts": [
+      "Recently added",
+      "A–Z",
+      "Live first"
+    ],
+    "reminders": [
+      {
+        "title": "cup-final",
+        "meta": "SUN 13 SEP · 16:00 · 4K",
+        "art": "remind-1",
+        "tag": "REMINDER SET"
+      },
+      {
+        "title": "grand-prix-race",
+        "meta": "SUN 13 SEP · 14:00 · 4K",
+        "art": "remind-2"
+      },
+      {
+        "title": "open-tennis-final",
+        "meta": "MON 14 SEP · 19:00 · 4K",
+        "art": "remind-3"
+      },
+      {
+        "title": "draft-night",
+        "meta": "WED 16 SEP · 01:00 · HD",
+        "art": "remind-4"
+      }
+    ],
+    "saved": [
+      {
+        "title": "the-perfect-season",
+        "meta": "Doc · 1h 52m",
+        "art": "saved-1",
+        "tag": "4K"
+      },
+      {
+        "title": "inside-the-lines",
+        "meta": "Series · 3 seasons",
+        "art": "saved-2",
+        "tag": "4K"
+      },
+      {
+        "title": "nine-seconds",
+        "meta": "Film · 2025",
+        "art": "saved-3",
+        "tag": "HDR"
+      },
+      {
+        "title": "rivals",
+        "meta": "Series · S2",
+        "art": "saved-4",
+        "tag": "4K"
+      },
+      {
+        "title": "the-long-run",
+        "meta": "Doc · 1h 20m",
+        "art": "saved-5",
+        "tag": "HD"
+      },
+      {
+        "title": "under-lights",
+        "meta": "Film · 2026",
+        "art": "saved-6",
+        "tag": "4K"
+      },
+      {
+        "title": "set-match",
+        "meta": "Series · S1",
+        "art": "saved-7",
+        "tag": "HD"
+      }
+    ]
+  },
+  "settings": {
+    "nav": [
+      "Video & audio",
+      "Subtitles & captions",
+      "Parental controls",
+      "Downloads",
+      "Notifications",
+      "Network",
+      "About"
+    ],
+    "device": "Arena Box 4K · v4.2.1\nPaired · Living room",
+    "plan": "marcus@example.com · Premium 4K annual · Renews 4 Mar 2027",
+    "quality": {
+      "title": "Streaming quality",
+      "detail": "Up to 4K Ultra HD · Dolby Vision · uses ~7 GB/hour",
+      "options": [
+        "AUTO",
+        "HD",
+        "4K"
+      ],
+      "chosen": 2
+    },
+    "toggles": [
+      {
+        "title": "Dolby Vision",
+        "detail": "Use HDR when the title and TV both support it",
+        "on": true
+      },
+      {
+        "title": "Dolby Atmos",
+        "detail": "Spatial audio through your receiver or soundbar",
+        "on": true
+      },
+      {
+        "title": "Autoplay next episode",
+        "detail": "Start the next episode after the credits",
+        "on": true
+      },
+      {
+        "title": "Preview trailers while browsing",
+        "detail": "Play muted previews on the home screen",
+        "on": false
+      },
+      {
+        "title": "Reduce motion",
+        "detail": "Simplify focus animations across the app",
+        "on": false
+      }
+    ],
+    "footer": [
+      "Sign out of this device",
+      "Legal & privacy",
+      "Help"
+    ]
+  }
+}

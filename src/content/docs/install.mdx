@@ -1,0 +1,32 @@
+---
+title: Install
+description: Add the package, pick a text tool, and build for a 2017 TV.
+---
+
+```sh
+pnpm add tenfoot
+```
+
+The package ships modern JavaScript modules with TypeScript types. You make two choices when you install it. Neither one has a default. That is on purpose.
+
+## Pick a text tool
+
+Text is drawn by the tool you import. Only that tool ends up in your app:
+
+```ts
+import { canvasText } from 'tenfoot/text/canvas';
+```
+
+`canvasText` uses the browser to draw each line of text. You get the browser's fonts for free. There are no font files to download. This is the right place to start. The tutorial uses it.
+
+`msdfText` draws each letter from a font picture made ahead of time. It stays sharp at any size and never redraws letters. It needs one font picture per font. You make it with the `tenfoot-msdf` command from a TrueType font file. The sample app uses it for all its text, from an 80 px title down to a 12 px label. Come back to it when your design has a lot of text.
+
+## Build for the TV
+
+Old TVs cannot load modern JavaScript modules. So your build has to make one old-style (ES5) file. Vite with `@vitejs/plugin-legacy` does this with one config file. The [setup step](../tutorial/setup/) of the tutorial shows both files you need. You still write modern TypeScript.
+
+Two rules for your own code. Do not use `async`/`await` or generators. They turn into slow code on a 2017 chip. Do not use `fetch`. Chromium 38 does not have it. Use `XMLHttpRequest` instead. `Promise` and `Map` are fine.
+
+## Try it in a browser first
+
+Any desktop browser with WebGL runs the same code. Open your app with `?debug=1` to keep the debug overlay on screen. When you are ready for a real TV, the [ship it](../ship/) page has the packaging commands.

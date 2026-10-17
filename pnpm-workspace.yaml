@@ -1,0 +1,4 @@
+# pnpm 11 runs no dependency build scripts unless listed here.
+allowBuilds:
+  esbuild: true
+  sharp: true

@@ -1,0 +1,30 @@
+---
+title: Grid
+description: A CardGrid of posters with a fixed number of columns. Rows past the screen scroll up.
+tableOfContents: false
+sidebar:
+  order: 5
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../../components/Monitor.astro';
+import src from '../../../../../steps/widgets-grid.ts?raw';
+
+<div class="lesson">
+<Monitor step="widgets-grid" running="Grid" />
+<div class="notes">
+
+## What is on screen
+
+Click the picture and press Down a few times. The first rows scroll up out of the way, and the row you are on comes into view.
+
+- **`CardGrid`** is a field of cards with a fixed number of `columns`. `width` is the field's width, and `gap` is the space between cards in each direction. `grid.card(id, label, node)` adds a card, and the grid places it.
+- The grid is the last thing on a screen, so it takes the room from where it sits to the bottom edge. Rows past that scroll. A grid that fits does not scroll and does not clip, so it costs no extra draw call.
+- `grid.cells()` hands the focus engine a grid instead of a strip. Up and Down move by row and Left and Right by column. `rowFlow: true` lets Right at the end of a row continue onto the next.
+
+This is the shape of a search results page, a genre page, and a saved list.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="widgets-grid.ts" />

@@ -1,0 +1,45 @@
+---
+title: Video and captions
+description: Play a video under the canvas, draw controls on top, and show captions.
+tableOfContents: false
+sidebar:
+  order: 8
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../components/Monitor.astro';
+import src from '../../../../steps/step7.ts?raw';
+
+<div class="lesson">
+<Monitor step="step-7" running="Step 8 · video and captions" />
+<div class="notes">
+
+## What you wrote
+
+Every TV plays video the same way. The TV decodes the video into a layer under the page. The page draws on top of it. So your app owns the `<video>` element. You connect your player to it (Shaka, hls.js, or the TV's own player). Then you hand the element to `createRenderer` as `video`.
+
+The renderer reads the video's clock and state. It gives you two things back:
+
+- `r.controller`: play, pause, seek, `time()`, `state`, and an `on` function for changes.
+- `r.subtitles`: a node that draws captions.
+
+The controls are normal nodes. A dark strip, a title, and a progress bar that compares `controller.time()` to `state.duration`. When the state changes, `controller.on` asks for a redraw. While the video plays, a "dirty source" asks for a redraw four times a second. Nothing else runs. A paused player draws nothing.
+
+Captions come from the `<track>` on the video element. The renderer picks up its cues. The `Subtitles` node shows them at the right time and lays them out. On a real TV, it uses the TV's own caption settings. `setAvoid` tells it which areas to stay out of. That is how captions move above your progress bar instead of under it.
+
+## What happened
+
+Click the picture and press <kbd>OK</kbd>. The status line shows the state, the time, and the current caption. Left and right jump ten seconds. Frames are drawn while the video plays, and stop when it stops.
+
+## On a TV
+
+The renderer tells `platform.keepAwake` about every play and pause. So the screensaver never comes on over a playing video. Samsung requires this, and the TV does not figure it out on its own.
+
+The clip here is muted, because a web page cannot autoplay with sound. On a TV, the viewer pressed Play. Both LG and Samsung also expect Back during playback to stop the video and go back. The transport keys (`play`, `pause`, `rewind`, `fastForward`) arrive as actions once your app asks for them.
+
+That is the end of the tutorial. [The reference app](../../reference-app/) uses these same eight ideas to build a full service. The [reference](../../reference/core/) lists every function, tier by tier.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="main.ts" />

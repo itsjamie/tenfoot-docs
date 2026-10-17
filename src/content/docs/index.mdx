@@ -1,0 +1,79 @@
+---
+title: Tenfoot
+description: A WebGL UI renderer for set-top boxes and smart TVs. Builds ten thousand items five times faster than the Lightning renderer and twenty times faster than Solid Lightning or SolidTV, and it runs on a 2017 TV.
+template: splash
+hero:
+  tagline: A GPU renderer for the TVs people really own. On Lightning's own speed test, it builds ten thousand items five times faster than the Lightning renderer and twenty times faster than Solid Lightning or SolidTV. It uses a fraction of the memory. And it runs on a 2017 LG or Samsung.
+  actions:
+    - text: Build your first app
+      link: tutorial/
+      icon: right-arrow
+    - text: See the numbers
+      link: why/
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Why it is fast
+
+A TV app has one hard job. It has to draw a screen full of cards and text, sixty times a second, on a chip ten to fifteen times slower than a laptop. Most TV frameworks were built for something else first. Then they were moved to the TV. Tenfoot was built for the 2017 TV from day one. You can see that in six places.
+
+<CardGrid>
+  <Card title="One GPU program for everything" icon="rocket">
+    Shapes, pictures, and text all use the same GPU program. The painter puts them in groups. It starts a new group only when the picture data changes. A home screen with a hero, ten cards, their captions, and a focus ring is about ten draw calls. (A draw call is one request to the GPU to draw.) A gray "not available" look on a card is just a number saved with the shape. It is not a second program. So it costs nothing extra.
+  </Card>
+  <Card title="No frames when nothing changes" icon="moon">
+    The screen draws a new frame only when something asks for one, or when something is moving. A screen that is sitting still draws nothing. Press a key, and it draws the six or seven frames the animation needs. Then it stops. On a TV, that is the difference between a warm box and a hot one. It is why the fan never turns on.
+  </Card>
+  <Card title="One small record per shape" icon="seti:json">
+    Each shape is 18 numbers in one list. The GPU turns them into corners when it can. When it cannot, the CPU does it in a tight loop. There is no tree of web page elements. There are no styles to work out. There is no layout engine to run. The browser's own page layout never touches your app.
+  </Card>
+  <Card title="No templates, no diffing" icon="seti:config">
+    A node is an object with a `paint` method. There is no template language to build. There is no copy of the screen to compare. There is no data binding to run on every change. You write what to draw. That is where most of the speed comes from. It is a choice, not a missing feature.
+  </Card>
+  <Card title="Memory is a budget, not a hope" icon="seti:image">
+    Pictures share space on the GPU and live under a byte limit. When the limit is reached, the pictures used least recently are dropped. Compressed pictures shrink a full-screen backdrop from 8 MB to 1 MB. In the test below, 20,000 items took 3 MB of memory instead of 24.
+  </Card>
+  <Card title="Sized for a 2017 set" icon="laptop">
+    The whole core is 38 KB. It uses WebGL 1, because every TV has that. It uses WebGL 2 only when a newer TV offers it. It knows that some TVs do GPU math with 16-bit numbers, and it stays inside that. It has no `async`, no generators, and no `fetch`, because those turn into slow code on a 2017 browser.
+  </Card>
+</CardGrid>
+
+## The numbers
+
+This is the Lightning team's own speed test. We ran it on one computer, in one sitting, with the CPU slowed down six times. Four renderers took part: Tenfoot, the Lightning 3 renderer on its own, Solid Lightning on top of that renderer, and SolidTV on its own changed copy of it. The two Solid columns include the framework, because that is how a Solid app is written. Lower is better.
+
+| Test | Tenfoot | Lightning renderer | Solid Lightning | SolidTV |
+| --- | ---: | ---: | ---: | ---: |
+| create 10,000 items | 21 ms | 108 ms | 526 ms | 474 ms |
+| add 10,000 items | 20 ms | 113 ms | 539 ms | 490 ms |
+| 20,000 items in memory | 3.2 MB | 24.5 MB | 75.9 MB | no result |
+| create 1,000 items | 3.9 ms | 35.7 ms | 88.6 ms | 76.6 ms |
+| clear the screen | 3.0 ms | 8.9 ms | 14.8 ms | 29.2 ms |
+| file size | 38 KB | 172 KB | 236 KB | 190 KB |
+
+Two things to know before you read it. The test measures how long a renderer takes to say "I'm done." Lightning and SolidTV say it a frame or two after they finish drawing. So on the small tests, much of their number is that wait. The big tests are the fair ones, and the gap there is real. Also, these are desktop numbers, not TV numbers yet. Running on a real 2017 set is the first item on the [roadmap](roadmap/). The [why](why/) page has every row, the versions, and what happened to SolidTV's memory test. It also has SolidTV's own demo, rebuilt on Tenfoot. Both hold 60 frames a second on a desktop. Tenfoot does it with about two thirds of the CPU time, and 11 draw calls to their 45.
+
+## What comes with it
+
+<CardGrid stagger>
+  <Card title="Focus that works on a scrolling row" icon="seti:config">
+    Your screen says where its cards are. The focus engine does the rest. It remembers where you were, moves between rows the right way, and handles long lists.
+  </Card>
+  <Card title="What the TV makers check for" icon="approve-check">
+    The exit dialog Samsung wants and LG does not. Keeping the screensaver off during video. Working offline. Deep links where Back still works.
+  </Card>
+  <Card title="Captions that follow the video" icon="open-book">
+    A caption layer that keeps time with the video, uses the TV's own caption settings, and stays out of the way of your controls.
+  </Card>
+  <Card title="Widgets from a real app" icon="puzzle">
+    Cards, rows, grids, buttons, and menus. They were built and tested by a sample app with eleven screens. Import them by name, or draw your own.
+  </Card>
+</CardGrid>
+
+```sh
+pnpm add tenfoot
+```
+
+The tutorial takes you from one shape on a canvas to a two-screen app with video and captions, in eight short steps. Every step runs live on the page.

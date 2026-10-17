@@ -1,0 +1,18 @@
+---
+title: layout
+description: Row, Column, and Grid. tenfoot/layout.
+sidebar:
+  order: 3
+---
+
+A small flexbox for one direction at a time, plus a grid with a fixed number of columns. It is about 150 lines instead of a full flexbox engine. There are no percentages and no measure functions. That is on purpose.
+
+```ts
+new Row({ gap, padding, justify, align });      // justify: 'start' | 'center' | 'end' | 'space-between'
+new Column({ gap, padding, justify, align });   // align: 'start' | 'center' | 'end' | 'stretch'
+new Grid({ columns, gap, padding, cell });      // gap: n or { x, y }; cell: { w, h } fixes cell size
+```
+
+Children keep their own size unless you set `grow` (they share the free space) or `align: 'stretch'` (they fill the other direction). A container with a zero size wraps around its children and keeps doing so. Layout is lazy. Adding a child marks the container as changed, and the next paint places everything. Call `layout()` to do it now, for example to read child positions before a frame. `invalidateLayout()` marks it changed by hand.
+
+The sample app's `Screenful` lays a screen out over and over until nothing moves. A column that holds a row that holds a grid needs one pass per level.

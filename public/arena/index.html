@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ARENA+</title>
+<script>
+  // `probe` in the query or in the set's launch parameters opens the GPU probe instead of the app:
+  // ares-launch com.arenaplus.tv -p '{"probe":"1"}'. See probe.ts.
+  var PROBE = /[?&]probe=([^&]*)/;
+  // biome-ignore lint/complexity/useArrowFunction: inline, so never transpiled, and Chromium 38 has no arrows
+  (function () {
+    var sys = window.webOSSystem || window.PalmSystem;
+    var launch = null;
+    var p = '';
+    var m = PROBE.exec(location.search);
+    try {
+      launch = sys && sys.launchParams ? JSON.parse(sys.launchParams) : null;
+    } catch (_e) {
+      launch = null;
+    }
+    if (launch && launch.probe) p = String(launch.probe);
+    if (m) p = m[1];
+    if (p) location.replace('./probe.html?probe=' + p);
+  })();
+</script>
+<style>
+  html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #05070d; }
+  /* Out of the document until the player screen asks for the plane (main.ts takes it out at boot). */
+  video { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+  canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+</style>
+  
+  
+</head>
+<body>
+<!-- The video plane the player screen shows through the transparent canvas. `preload="none"` and no
+     `autoplay`, so browsing never holds a decoder open: the player screen calls play() and the
+     first byte is fetched then. The caption track has to be declared here — there is no API that
+     adds one — and the controller reads it as a subtitle track whether or not the media is loaded.
+     tools/arena-clip.mjs writes the clip; design/arena.dc.html's match frame is a drop target. -->
+<video id="video" src="./media/match.webm" preload="none" muted playsinline>
+  <track kind="subtitles" srclang="en" label="English CC" src="./media/match.en.vtt">
+</video>
+<canvas id="ui"></canvas>
+  <script crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-DFW4pwUB.js"></script>
+  <script crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-DlSymSZM.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+</html>

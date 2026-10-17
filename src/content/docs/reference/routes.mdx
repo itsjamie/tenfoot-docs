@@ -1,0 +1,40 @@
+---
+title: routes
+description: Screens as a stack, and deep links that open one. tenfoot/routes.
+sidebar:
+  order: 5
+---
+
+```ts
+import { createRouter } from 'tenfoot';
+const router = createRouter({
+  root: r.root,
+  focus: {
+    openScope: (id, initial) => nav.openScope({ id, initial }),
+    closeScope: (id) => nav.closeScope(id),
+    move: (dir) => nav.move(dir),
+  },
+});
+router.register('home', createHome);
+router.register('detail', createDetail, { under: 'home', link: 'title' });
+router.open(platform.link()) || router.push('home');
+platform.on('relaunch', () => router.open(platform.link()));
+r.input((action) => router.handle(action) || (action === 'back' && (platform.exit(), true)));
+```
+
+## Route
+
+| Member | What it is |
+| --- | --- |
+| `id` | the screen's name; also the name of its focus scope |
+| `node` | everything the screen draws; added to the root the first time it opens |
+| `enter(arg?)` | sets up focus once the node is visible and laid out; returns a cleanup function |
+| `entry()` | the id where focus should land, or null |
+| `key?(action)` | handles a key before the router does; return false to pass it on |
+| `overlay?` | keep drawing the screen underneath |
+
+## Router
+
+`register(id, factory, { under?, link?, overlay? })`, `push(id, arg?)`, `replace(id, arg?)`, `pop()`, `handle(action)`, `open(link)`, `current`, `depth`, `trail`, `onChange(fn)`.
+
+`under` says which screen belongs beneath this one when a deep link opens it. Follow `under` all the way up and you reach the first screen. `replace` swaps the top screen without making the stack deeper. A splash screen uses it, so Back on Home closes the app instead of going back to the splash. `link` names the URL parameter that opens the route. So `?title=rivals` and `?screen=detail&title=rivals` mean the same thing.

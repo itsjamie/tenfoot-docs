@@ -1,0 +1,30 @@
+---
+title: Nav and list
+description: A NavRail beside a List of FocusRows. Left and Right cross between the two.
+tableOfContents: false
+sidebar:
+  order: 6
+---
+
+import { Code } from '@astrojs/starlight/components';
+import Monitor from '../../../../components/Monitor.astro';
+import src from '../../../../../steps/widgets-nav.ts?raw';
+
+<div class="lesson">
+<Monitor step="widgets-nav" running="Nav and list" />
+<div class="notes">
+
+## What is on screen
+
+Click the picture. Up and Down move along the nav. Right jumps to the list. Left comes back. Press OK on a nav item to choose it.
+
+- **`NavRail`** is the left nav. `items` are its labels and `selected` is the one with the accent plate and marker. Choosing and focusing are separate: you can run focus down the rail while Home stays the chosen section. `rail.select(i)` chooses one.
+- **`List`** is a vertical run of rows. `list.row(id, label, node)` adds one. An episode list, a settings page, and a track menu are all lists.
+- **`FocusRow`** is a row that lights up when it has focus. It is a normal `Row`, so it holds whatever you put in it: here a number, a title, a spacer that grows, and a badge.
+
+The two strips are not in a pack, because they sit side by side. When focus reaches the right edge of the nav, the engine looks for the nearest item in that direction and finds the list.
+
+</div>
+</div>
+
+<Code code={src} lang="ts" title="widgets-nav.ts" />
