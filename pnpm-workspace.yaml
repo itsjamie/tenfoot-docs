@@ -2,3 +2,5 @@
 allowBuilds:
   esbuild: true
   sharp: true
+minimumReleaseAgeExclude:
+  - tenfoot@0.1.0
