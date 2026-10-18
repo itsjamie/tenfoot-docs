@@ -59,14 +59,14 @@ Thousands of items on a test page are not an app. So we also measured a whole sc
 
 ## What comes with it
 
-A renderer alone is not enough for a TV app. Tenfoot also has:
+A TV app needs more than drawing. Tenfoot also comes with:
 
-- **Captions** that keep time with the video, use the TV's caption settings, and fix themselves after a skip.
-- **Compressed pictures** (ETC1, DXT5, in KTX and PKM files) with a memory limit. When memory is full, the least-used pictures are dropped.
-- **A focus engine** built from a written spec. It has scopes, memory, scrolling, and long lists. A test suite checks every rule.
-- **Deep links** that open the right screen with Home under it. So Back works the way LG and Samsung require.
-- **The TV rules**: the exit dialog Samsung wants and LG does not, keeping the screensaver off during video, working offline, and handling a relaunch.
-- **Widgets** built and tested by a sample app with eleven screens.
+- **Captions** that read the time straight from the video, so they stay in step through a skip or a pause. They follow the caption settings the viewer chose on the TV.
+- **Compressed pictures** (ETC1 and DXT5, from KTX and PKM files) that live under a memory limit. When the limit is reached, the pictures used least recently make room.
+- **Focus that feels right on a remote.** It remembers where you were in each row, keeps focus inside a menu or dialog while it is open, and puts it back where it was when it closes. It scrolls to keep the focused item in view, even in a list too long to build all at once. Every rule it follows is written down and tested.
+- **Deep links** that open the right screen with Home beneath it, so Back leaves the app the way LG and Samsung require.
+- **The store rules**: the exit dialog Samsung asks for and LG does not, keeping the screensaver away during video, working offline, and coming back cleanly when the TV relaunches the app.
+- **Widgets**: cards, rows, grids, buttons, and menus, taken from [ARENA+](../reference-app/), the eleven-screen sample app they were built for and tested in.
 
 ## What it does not do
 
