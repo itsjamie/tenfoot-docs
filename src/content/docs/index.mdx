@@ -36,7 +36,7 @@ A TV app has one hard job. It has to draw a screen full of cards and text, sixty
     Pictures share space on the GPU and live under a byte limit. When the limit is reached, the pictures used least recently are dropped. Compressed pictures shrink a full-screen backdrop from 8 MB to 1 MB. In the test below, 20,000 items take about 3 MB.
   </Card>
   <Card title="Sized for a 2017 set" icon="laptop">
-    The whole core is 38 KB. It uses WebGL 1, because every TV has that. It uses WebGL 2 only when a newer TV offers it. It knows that some TVs do GPU math with 16-bit numbers, and it stays inside that. It has no `async`, no generators, and no `fetch`, because those turn into slow code on a 2017 browser.
+    The whole core is 47 KB minified, and 17 KB gzipped. It uses WebGL 1, because every TV has that. It uses WebGL 2 only when a newer TV offers it. It knows that some TVs do GPU math with 16-bit numbers, and it stays inside that. It has no `async`, no generators, and no `fetch`, because those turn into slow code on a 2017 browser.
   </Card>
 </CardGrid>
 
@@ -51,9 +51,9 @@ These come from the Lightning team's open speed test for TV renderers, [lightnin
 | add 10,000 items | 20 ms |
 | clear the screen | 3.0 ms |
 | 20,000 items in memory | 3.2 MB |
-| file size | 38 KB |
+| test page's JavaScript | 50 KB |
 
-These are desktop numbers, not TV numbers yet. Numbers from real TVs are on the [roadmap](roadmap/). The [why](why/) page has every row, and a full home screen measured the same way: nine rows of posters, a hero, and a fading backdrop hold 60 frames a second in 11 draw calls, even with the CPU slowed twenty times.
+These are desktop numbers, not TV numbers yet. The times are from September 17, 2026. The page size is the published package, 0.1.0, and it includes the test's own code. Numbers from real TVs are on the [roadmap](roadmap/). The [why](why/) page has every row, and a full home screen measured the same way: nine rows of posters, a hero, and a fading backdrop hold 60 frames a second in 11 draw calls, even with the CPU slowed twenty times.
 
 ## What comes with it
 

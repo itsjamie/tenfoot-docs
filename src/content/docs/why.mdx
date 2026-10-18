@@ -31,13 +31,15 @@ The Lightning team publishes an open speed test for TV renderers, [lightning-js/
 | add 10,000 items | 19.82 ±6.7 |
 | clear | 2.96 ±3.7 |
 | 20,000 items, memory | 3.17 MB · 28.5 ms |
-| file size | 38.38 KB |
+| test page's JavaScript | 50.03 KB |
 
 ## How to read the table
 
 **The clock stops when the renderer says "I'm done."** Tenfoot says it right after the frame it drew, so every time here includes drawing that frame.
 
 **The big rows are the ones to watch.** Making 10,000 items, adding 10,000 more, and holding 20,000 in memory are where the real work is. On the small rows, the work is a few milliseconds and the ± is as large as the number.
+
+**The page size is the published package.** It is all of the test page's JavaScript for `tenfoot` 0.1.0, built and minified the way the test builds it. About 43 KB of it is Tenfoot: the parts of the core the test uses, and the canvas text. The rest is the test's own code. The whole core, everything `tenfoot/core` exports, is 47 KB minified and 17 KB gzipped.
 
 **These are desktop numbers.** The computer is a desktop with the CPU slowed down. It is not a TV. Numbers from real TVs are on the [roadmap](../roadmap/).
 
