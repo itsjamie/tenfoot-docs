@@ -1,19 +1,18 @@
 ---
 title: Roadmap
-description: What is left to do, in the order that matters most to someone choosing this.
+description: What we are working on next.
 ---
 
-The renderer is not the weak spot. The things around it are. In order:
+Three things are next. If you want to help with any of them, [open an issue](https://github.com/itsjamie/tenfoot-docs/issues).
 
-1. **Run it on a real TV.** A 2017 LG and a 2017 Samsung. Until then, every number on this site comes from a desktop computer.
-2. **The widget tier.** Done, as `tenfoot/ui`, with `theme()` for a second design.
-3. **The services every TV app writes anyway.** Storage, translations, device info, usage stats, and a way to clean up timers when a screen closes.
-4. **More TV platforms.** Firebolt first, because that is where RDK apps run.
-5. **A Canvas 2D fallback** for TVs where WebGL is turned off.
-6. **This site**, a starter project, and a guide for moving from Lightning.
-7. **Better animation:** sequences, repeats, delays, and a callback when done.
-8. **A full player example**, including DRM.
+## Testers
 
-What it will not do: add a template language or data binding. The speed numbers on the [why](../why/) page come from keeping things simple. That stays.
+We are looking for people outside the project to build something with Tenfoot and tell us where it gets in the way. You do not need a TV to start. A desktop browser runs everything on this site.
 
-`docs/DESIGN.md`, which ships in the package, explains the design choices inside the library.
+## More devices
+
+Every number on this site comes from a desktop computer so far. We are gathering numbers from real TVs and set-top boxes, starting with 2017 LG and Samsung sets. If you have one and can run a test page on it, we would like to hear from you.
+
+## An easier API
+
+We want Tenfoot to be easier to learn and to take less code to write. That will not change its main design: it is a zero-cost abstraction. A helper should draw the same shapes, in the same draw calls, as the code you would have written by hand. If an easier way costs something on every frame, it does not go in.
