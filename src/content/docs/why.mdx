@@ -1,6 +1,6 @@
 ---
 title: Why a renderer
-description: The oldest TV sets the rules. What that means, how fast this is next to Lightning, and a close look at what SolidTV says about itself.
+description: The oldest TV sets the rules. What that means, and what Tenfoot's work costs on a speed test and on a full home screen.
 ---
 
 Every TV app has to run on the oldest TV its company still supports. For LG and Samsung, that is a 2017 TV. Its browser is Chromium 38 (LG) or Chromium 47 (Samsung). It has no `fetch`, no WebAssembly, and no WebGL 2. Its chip is ten to fifteen times slower than a laptop. And its GPU does math with 16-bit numbers, even when it says it can do better.
@@ -17,63 +17,47 @@ Tenfoot treats that 2017 TV as the main target, not a special case. It uses newe
 
 ## How fast is it?
 
-The Lightning team has its own speed test, [lightning-js/benchmark](https://github.com/lightning-js/benchmark). It makes, changes, and removes thousands of items with the CPU slowed down six times. Here are four renderers on the same computer, in the same run, on September 17, 2026. Times are in milliseconds. Lower is better. The ± number shows how much the result moved between runs.
+The Lightning team publishes an open speed test for TV renderers, [lightning-js/benchmark](https://github.com/lightning-js/benchmark). It makes, changes, and removes thousands of items with the CPU slowed down six times. These are Tenfoot's core on that test, run on September 17, 2026. Times are in milliseconds. Lower is better. The ± number shows how much the result moved between runs.
 
-The four columns are: Tenfoot's core; the Lightning 3 renderer (3.3.1) on its own; Solid Lightning (`@lightningtv/solid` 3.2.5 on top of that renderer); and SolidTV (`@solidtv/solid` 1.6.2 on top of `@solidtv/renderer` 1.9.2, which is a changed copy of the Lightning renderer). The two Solid columns are written the way a Solid app is written, with a store and a `<For>` loop. So they include the framework's own work.
-
-| Test | Tenfoot | Lightning renderer | Solid Lightning | SolidTV |
-| --- | ---: | ---: | ---: | ---: |
-| create 1,000 items | 3.94 ±2.4 | 35.66 ±13.4 | 88.56 ±25.5 | 76.56 ±18.3 |
-| update 1,000 items | 4.52 ±2.4 | 34.74 ±1.9 | 40.02 ±3.8 | 45.06 ±14.2 |
-| update every 10th | 2.84 ±0.8 | 23.46 ±14.6 | 21.68 ±12.5 | 45.68 ±17.8 |
-| select one | 4.76 ±3.9 | 22.92 ±17.6 | 22.34 ±15.0 | 40.56 ±22.9 |
-| swap two rows | 3.08 ±1.1 | 23.86 ±16.6 | 27.90 ±5.8 | 39.88 ±18.1 |
-| remove one | 2.40 ±2.0 | 17.36 ±15.2 | 19.68 ±9.0 | 29.34 ±14.9 |
-| create 10,000 items | 21.44 ±10.0 | 107.54 ±9.3 | 525.92 ±41.0 | 474.28 ±17.6 |
-| add 10,000 items | 19.82 ±6.7 | 113.08 ±12.0 | 539.32 ±19.3 | 490.36 ±40.8 |
-| clear | 2.96 ±3.7 | 8.90 ±1.9 | 14.82 ±17.3 | 29.22 ±19.0 |
-| 20,000 items, memory | 3.17 MB · 28.5 ms | 24.54 MB · 328.8 ms | 75.90 MB · 218.6 ms | no result |
-| file size | 38.38 KB | 171.71 KB | 236.43 KB | 190.31 KB |
+| Test | Tenfoot |
+| --- | ---: |
+| create 1,000 items | 3.94 ±2.4 |
+| update 1,000 items | 4.52 ±2.4 |
+| update every 10th | 2.84 ±0.8 |
+| select one | 4.76 ±3.9 |
+| swap two rows | 3.08 ±1.1 |
+| remove one | 2.40 ±2.0 |
+| create 10,000 items | 21.44 ±10.0 |
+| add 10,000 items | 19.82 ±6.7 |
+| clear | 2.96 ±3.7 |
+| 20,000 items, memory | 3.17 MB · 28.5 ms |
+| file size | 38.38 KB |
 
 ## How to read the table
 
-**The test measures how long a renderer takes to say "I'm done."** That is the test's rule. Each renderer decides for itself when to say it. Lightning and SolidTV check for new work on a timer. They say "done" a frame or two after their last drawing. Tenfoot says it right after the frame it drew. On the small tests, the real work is only a few milliseconds. So most of the Lightning and SolidTV number is that wait, not drawing. The big tests are where the real work is. Making 10,000 items, adding 10,000 more, and holding 20,000 in memory are the rows to compare. The gap there is real: about five times the Lightning renderer, and more than twenty times the two Solid frameworks.
+**The clock stops when the renderer says "I'm done."** Tenfoot says it right after the frame it drew, so every time here includes drawing that frame.
 
-**SolidTV has no memory result.** With 20,000 items on screen, its renderer never said "done." The test gave up after ten minutes. Its other numbers are from the same run and are fine.
+**The big rows are the ones to watch.** Making 10,000 items, adding 10,000 more, and holding 20,000 in memory are where the real work is. On the small rows, the work is a few milliseconds and the ± is as large as the number.
 
-**These are desktop numbers.** The computer is a desktop with the CPU slowed down. It is not a TV. The text rows compare two different ways of drawing text. Running this on a real 2017 set is the first item on the [roadmap](../roadmap/).
+**These are desktop numbers.** The computer is a desktop with the CPU slowed down. It is not a TV. Running this on a real 2017 set is the first item on the [roadmap](../roadmap/).
 
-The test is [lightning-js/benchmark](https://github.com/lightning-js/benchmark), with a Tenfoot entry and the two Solid entries added beside the ones it ships.
+## A full home screen
 
-## What SolidTV says about itself
+Thousands of items on a test page are not an app. So we also measured a whole screen: nine rows of twenty movie posters, a hero picture that changes when you land on a tile, and a full-screen backdrop that fades from one picture to the next. A script presses Down eight times and Up eight times, twice, half a second apart. It runs in headless Chromium on the GPU, with the CPU slowed 1×, 6×, and 20×. These are from September 17, 2026.
 
-[SolidTV's home page](https://solidtv.dev/) calls it "the fastest TV app framework," with "50% higher FPS than LightningJS," in "~12kb." The table above does not agree. So we read the claims closely.
+| Metric | 1× | 6× | 20× |
+| --- | ---: | ---: | ---: |
+| frames a second, animating | 60.1 | 60.2 | 60.6 |
+| worst frame, ms | 16.9 | 20.3 | 24.5 |
+| CPU per frame, mean ms | 0.064 | 0.123 | 0.434 |
+| CPU per frame, peak ms | 1.7 | 6.7 | 21.9 |
+| key press, mean / max ms | 0.11 / 0.6 | 0.45 / 2.8 | 1.52 / 8.7 |
+| draw calls | 11 | 11 | 11 |
+| first picture, ms | 33 | 113 | 406 |
 
-**The 50% comes from one blog post.** It compares SolidTV's copy of the renderer with an early test version of Lightning 3 (beta 20). The test ran on a Raspberry Pi 3, with a screen that had a hero and some rows. The post says the beta drew about 30 frames a second and the copy drew more than 45. It says the gain came from wasted work in the update loop, from garbage collection, and from caching. It does not share the test app, the settings, or the numbers behind the averages. So no one can run it again. Lightning 3 has shipped many releases since that beta. The renderer column above is one of them.
+**It holds 60 frames a second at every speed.** The whole screen is 11 draw calls. The CPU number is the time spent inside paint. Text is drawn with the browser's canvas. At 20×, 19 frames out of 20 finish under 20 ms, and the worst takes 24 ms, so a frame is dropped now and then.
 
-**"~12kb" is the framework alone.** The renderer it needs is most of the 190 KB the test measured for the whole app. Tenfoot's whole core is 38 KB.
-
-**"Fastest" means frames per second on one screen.** The Lightning test measures something else: how long it takes to build, change, and drop thousands of items, with the framework's own work included. On that test, SolidTV is the slowest of the four. It never finishes the 20,000-item memory test. Both things can be true at once. A renderer can hold a steady frame rate on a small screen and still be slow to build a big one. So we ran their test too.
-
-## Their demo, rebuilt
-
-SolidTV publishes a [demo benchmark](https://solid-tv.github.io/solid-demo-app/#/benchmark). It has nine rows of twenty movie posters, a hero picture that changes when you land on a tile, and a full-screen backdrop that fades from one picture to the next. A script presses Down eight times and Up eight times, twice, half a second apart. Then the page reports its frame times, CPU time, and key handling. We rebuilt that screen on Tenfoot, node for node. It has the same pictures, sizes, timings, and easing, and runs the same script. The harness runs both pages in the same headless Chromium on the GPU, with the CPU slowed 1×, 6×, and 20×. These are from September 17, 2026.
-
-| Metric | SolidTV 1× | Tenfoot 1× | SolidTV 6× | Tenfoot 6× | SolidTV 20× | Tenfoot 20× |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| frames a second, animating | 60 | 60.1 | 60 | 60.2 | 59.9 | 60.6 |
-| worst frame, ms | 16.8 | 16.9 | 16.8 | 20.3 | 33.4 | 24.5 |
-| CPU per frame, mean ms | 0.103 | 0.064 | 0.218 | 0.123 | 0.666 | 0.434 |
-| CPU per frame, peak ms | 2.1 | 1.7 | 9.7 | 6.7 | 37.5 | 21.9 |
-| key press, mean / max ms | 0.15 / 0.6 | 0.11 / 0.6 | 0.59 / 3.2 | 0.45 / 2.8 | 2.24 / 14.3 | 1.52 / 8.7 |
-| draw calls | 46 | 11 | 45 | 11 | 44 | 11 |
-| first picture, ms | 562 | 33 | 557 | 113 | 634 | 406 |
-
-**Both hold 60 frames a second.** At every speed. This screen is small for a desktop GPU. So frame rate tells you nothing here, and it cannot show a 50% gap for anyone. What separates the two is the work under each frame. Tenfoot uses half to two thirds of the CPU time per frame. It handles a key press in about two thirds of the time. It draws the screen in 11 draw calls where SolidTV needs 45. And it shows the first picture in 33 ms where SolidTV takes 562. Most of SolidTV's 562 is downloading its text font and starting the framework.
-
-**Each page measures itself.** SolidTV's CPU number comes from its own update, render, and upload timers. Ours is the time spent inside paint. SolidTV draws text from a font file it downloads. Tenfoot's version uses the browser's canvas for text. At 20×, our frame times spread wider than theirs (19 out of 20 frames under 20 ms, against 16) while drawing the same number of frames. Both drop a frame at their worst (24 ms against 33). We report that as measured.
-
-**Rebuilding the demo found a bug in Tenfoot.** The first run drew at 30 frames a second. The demo keeps 68 pictures loaded. A 1280×720 backdrop was sitting on a square 2048 GPU picture: 16 MB for 3.7 MB of pixels. The set came to 106 MB against a 64 MB limit. So pictures were dropped and loaded again every other frame. Now a picture that gets its own GPU space is cut to its own size. The same set is 48 MB, nothing is dropped, and the page holds 60. SolidTV never hit this. It keeps its pictures under 124 MB and cleans up every five seconds.
+**Measuring this screen found a bug.** The first run drew at 30 frames a second. The screen keeps 68 pictures loaded. A 1280×720 backdrop was sitting on a square 2048 GPU picture: 16 MB for 3.7 MB of pixels. The set came to 106 MB against a 64 MB limit. So pictures were dropped and loaded again every other frame. Now a picture that gets its own GPU space is cut to its own size. The same set is 48 MB, nothing is dropped, and the screen holds 60.
 
 ## What comes with it
 

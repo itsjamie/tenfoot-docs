@@ -1,9 +1,9 @@
 ---
 title: Tenfoot
-description: A WebGL UI renderer for set-top boxes and smart TVs. Builds ten thousand items five times faster than the Lightning renderer and twenty times faster than Solid Lightning or SolidTV, and it runs on a 2017 TV.
+description: A WebGL UI renderer for set-top boxes and smart TVs. It runs on a 2017 LG or Samsung, and comes with focus, video, captions, compressed pictures, and a widget kit.
 template: splash
 hero:
-  tagline: A GPU renderer for the TVs people really own. On Lightning's own speed test, it builds ten thousand items five times faster than the Lightning renderer and twenty times faster than Solid Lightning or SolidTV. It uses a fraction of the memory. And it runs on a 2017 LG or Samsung.
+  tagline: A GPU renderer for the TVs people really own. Build an app with focus, video, captions, and widgets, and run it on a 2017 LG or Samsung.
   actions:
     - text: Build your first app
       link: tutorial/
@@ -17,7 +17,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Why it is fast
 
-A TV app has one hard job. It has to draw a screen full of cards and text, sixty times a second, on a chip ten to fifteen times slower than a laptop. Most TV frameworks were built for something else first. Then they were moved to the TV. Tenfoot was built for the 2017 TV from day one. You can see that in six places.
+A TV app has one hard job. It has to draw a screen full of cards and text, sixty times a second, on a chip ten to fifteen times slower than a laptop. Tenfoot was built for the 2017 TV from day one. You can see that in six places.
 
 <CardGrid>
   <Card title="One GPU program for everything" icon="rocket">
@@ -33,7 +33,7 @@ A TV app has one hard job. It has to draw a screen full of cards and text, sixty
     A node is an object with a `paint` method. There is no template language to build. There is no copy of the screen to compare. There is no data binding to run on every change. You write what to draw. That is where most of the speed comes from. It is a choice, not a missing feature.
   </Card>
   <Card title="Memory is a budget, not a hope" icon="seti:image">
-    Pictures share space on the GPU and live under a byte limit. When the limit is reached, the pictures used least recently are dropped. Compressed pictures shrink a full-screen backdrop from 8 MB to 1 MB. In the test below, 20,000 items took 3 MB of memory instead of 24.
+    Pictures share space on the GPU and live under a byte limit. When the limit is reached, the pictures used least recently are dropped. Compressed pictures shrink a full-screen backdrop from 8 MB to 1 MB. In the test below, 20,000 items take about 3 MB.
   </Card>
   <Card title="Sized for a 2017 set" icon="laptop">
     The whole core is 38 KB. It uses WebGL 1, because every TV has that. It uses WebGL 2 only when a newer TV offers it. It knows that some TVs do GPU math with 16-bit numbers, and it stays inside that. It has no `async`, no generators, and no `fetch`, because those turn into slow code on a 2017 browser.
@@ -42,18 +42,18 @@ A TV app has one hard job. It has to draw a screen full of cards and text, sixty
 
 ## The numbers
 
-This is the Lightning team's own speed test. We ran it on one computer, in one sitting, with the CPU slowed down six times. Four renderers took part: Tenfoot, the Lightning 3 renderer on its own, Solid Lightning on top of that renderer, and SolidTV on its own changed copy of it. The two Solid columns include the framework, because that is how a Solid app is written. Lower is better.
+These come from the Lightning team's open speed test for TV renderers, [lightning-js/benchmark](https://github.com/lightning-js/benchmark). It makes, changes, and removes thousands of items. We ran it on a desktop computer with the CPU slowed down six times. Lower is better.
 
-| Test | Tenfoot | Lightning renderer | Solid Lightning | SolidTV |
-| --- | ---: | ---: | ---: | ---: |
-| create 10,000 items | 21 ms | 108 ms | 526 ms | 474 ms |
-| add 10,000 items | 20 ms | 113 ms | 539 ms | 490 ms |
-| 20,000 items in memory | 3.2 MB | 24.5 MB | 75.9 MB | no result |
-| create 1,000 items | 3.9 ms | 35.7 ms | 88.6 ms | 76.6 ms |
-| clear the screen | 3.0 ms | 8.9 ms | 14.8 ms | 29.2 ms |
-| file size | 38 KB | 172 KB | 236 KB | 190 KB |
+| Test | Tenfoot |
+| --- | ---: |
+| create 1,000 items | 3.9 ms |
+| create 10,000 items | 21 ms |
+| add 10,000 items | 20 ms |
+| clear the screen | 3.0 ms |
+| 20,000 items in memory | 3.2 MB |
+| file size | 38 KB |
 
-Two things to know before you read it. The test measures how long a renderer takes to say "I'm done." Lightning and SolidTV say it a frame or two after they finish drawing. So on the small tests, much of their number is that wait. The big tests are the fair ones, and the gap there is real. Also, these are desktop numbers, not TV numbers yet. Running on a real 2017 set is the first item on the [roadmap](roadmap/). The [why](why/) page has every row, the versions, and what happened to SolidTV's memory test. It also has SolidTV's own demo, rebuilt on Tenfoot. Both hold 60 frames a second on a desktop. Tenfoot does it with about two thirds of the CPU time, and 11 draw calls to their 45.
+These are desktop numbers, not TV numbers yet. Running on a real 2017 set is the first item on the [roadmap](roadmap/). The [why](why/) page has every row, and a full home screen measured the same way: nine rows of posters, a hero, and a fading backdrop hold 60 frames a second in 11 draw calls, even with the CPU slowed twenty times.
 
 ## What comes with it
 
