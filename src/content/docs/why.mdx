@@ -57,8 +57,6 @@ Thousands of items on a test page are not an app. So we also measured a whole sc
 
 **It holds 60 frames a second at every speed.** The whole screen is 11 draw calls. The CPU number is the time spent inside paint. Text is drawn with the browser's canvas. At 20×, 19 frames out of 20 finish under 20 ms, and the worst takes 24 ms, so a frame is dropped now and then.
 
-**Measuring this screen found a bug.** The first run drew at 30 frames a second. The screen keeps 68 pictures loaded. A 1280×720 backdrop was sitting on a square 2048 GPU picture: 16 MB for 3.7 MB of pixels. The set came to 106 MB against a 64 MB limit. So pictures were dropped and loaded again every other frame. Now a picture that gets its own GPU space is cut to its own size. The same set is 48 MB, nothing is dropped, and the screen holds 60.
-
 ## What comes with it
 
 A renderer alone is not enough for a TV app. Tenfoot also has:
