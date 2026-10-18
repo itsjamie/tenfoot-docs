@@ -27,7 +27,7 @@ The same buttons, chips, cards, and rails as the other pages, in a different des
 - **`type`** replaces a whole text setting, like `type.heading`.
 - **`screen`** is the layout space, for a design drawn at 1280×720 instead of 1920×1080. Create the renderer at the same size. These story pages use it to draw at 960×540, which is why the widgets are readable in a small monitor.
 
-## Why it costs nothing
+## Why a frame costs nothing extra
 
 The kit's tokens are plain objects: `color`, `type`, `radius`, and so on. Every widget reads `color.text.on` straight from that object when it draws. `theme()` changes the values inside those same objects. It does not wrap them, and no widget looks anything up through a function. So a frame in a themed app costs exactly what it costs in ARENA+.
 

@@ -15,4 +15,8 @@ Every number on this site comes from a desktop computer so far. We are gathering
 
 ## An easier API
 
-We want Tenfoot to be easier to learn and to take less code to write. That will not change its main design: it is a zero-cost abstraction. A helper should draw the same shapes, in the same draw calls, as the code you would have written by hand. If an easier way costs something on every frame, it does not go in.
+We want Tenfoot to be easier to learn and to take less code to write, without losing its main design.
+
+That design borrows an idea from C++: the zero-cost abstraction. In C++, a well-made helper compiles away. The program you get is the one you would have written by hand. JavaScript cannot promise that. A helper is still a function that runs, and running costs something. So Tenfoot will never be truly zero-cost the way C++ can be.
+
+It aims for the same standard anyway. A helper should draw the same shapes, in the same draw calls, as the code you would have written yourself, and add as little as we can measure on top. When a new helper adds a cost, we measure it, and it has to be worth it.
