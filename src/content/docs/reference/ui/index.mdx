@@ -25,13 +25,13 @@ A **strip** is a row or column of items. **Cells** are a grid of items. A **pack
 
 Each page below runs the real widgets on a small TV. Click the picture, then use the arrow keys.
 
-- [Type and badges](../text/): every way a line of text is set, and the small boxed labels.
-- [Buttons, chips, and pills](../controls/): the three button weights, filter chips you can choose, and pills.
-- [Cards](../cards/): posters, wide cards, and bare artwork, with badges, progress, and a blocked state.
-- [Rails](../rail/): a heading over a row of cards that scrolls, and Down between two of them.
-- [Grid](../grid/): a fixed-column field of posters that scrolls when it runs past the screen.
-- [Nav and list](../nav/): a left nav beside a list of rows, with Left and Right between them.
-- [Another design](../theme/): the same widgets restyled with `theme()`.
+- [Type and badges](text/): every way a line of text is set, and the small boxed labels.
+- [Buttons, chips, and pills](controls/): the three button weights, filter chips you can choose, and pills.
+- [Cards](cards/): posters, wide cards, and bare artwork, with badges, progress, and a blocked state.
+- [Rails](rail/): a heading over a row of cards that scrolls, and Down between two of them.
+- [Grid](grid/): a fixed-column field of posters that scrolls when it runs past the screen.
+- [Nav and list](nav/): a left nav beside a list of rows, with Left and Right between them.
+- [Another design](theme/): the same widgets restyled with `theme()`.
 
 ## Widgets
 
@@ -41,7 +41,7 @@ The four containers (`Rail`, `Bar`, `List`, `CardGrid`) hand back their own focu
 
 ## Design values and files
 
-`color`, `type`, `radius`, `space`, `focus`, `tracking`, `sans()`, `mono()`, `lineBox()`, `borderBox()`, `focusRing()`, `RING_SHADER`. These are the sample app's design numbers, and every widget reads its numbers through them. `theme({ brand, color, radius, space, focus, tracking, family, type, screen })` changes them in place before a screen is built. Anything you leave out keeps the sample app's value, and a frame costs the same either way. The [Another design](../theme/) page shows it. `FACES` lists the font pictures the tier expects under `font/` in your app's public folder. They ship in the package: copy `node_modules/tenfoot/dist/font` to `public/font`. The shading ramps, the glow and the play icon are drawn by the tier itself.
+`color`, `type`, `radius`, `space`, `focus`, `tracking`, `sans()`, `mono()`, `lineBox()`, `borderBox()`, `focusRing()`, `RING_SHADER`. These are the sample app's design numbers, and every widget reads its numbers through them. `theme({ brand, color, radius, space, focus, tracking, family, type, screen })` changes them in place before a screen is built. Anything you leave out keeps the sample app's value, and a frame costs the same either way. The [Another design](theme/) page shows it. `FACES` lists the font pictures the tier expects under `font/` in your app's public folder. They ship in the package: copy `node_modules/tenfoot/dist/font` to `public/font`. The shading ramps, the glow and the play icon are drawn by the tier itself.
 
 ## Pictures in order
 
