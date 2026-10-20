@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- A TV over a set-top box, a card focused on screen in the sample app's accent. -->
+  <rect x="1" y="2" width="30" height="19" rx="3" fill="#5a6478"/>
+  <rect x="3" y="4" width="26" height="15" rx="1.5" fill="#05070d"/>
+  <rect x="11" y="7" width="10" height="9" rx="1.5" fill="#1b2438" stroke="#3ea0ff" stroke-width="2"/>
+  <rect x="5" y="24" width="22" height="6" rx="1.5" fill="#5a6478"/>
+  <rect x="19" y="26" width="5" height="2" rx="1" fill="#3ea0ff"/>
+</svg>
